@@ -51,9 +51,10 @@
 		B68DDFEE29F7B77D00960E06 /* MiniChallengeOyeah */ = {
 			isa = PBXGroup;
 			children = (
-				B68DDFEF29F7B77D00960E06 /* MiniChallengeOyeahApp.swift */,
+				B68DDFFF29F7BF3000960E06 /* Features */,
+				B68DDFFE29F7BF2900960E06 /* Core */,
+				B68DDFFD29F7BF1A00960E06 /* Application */,
 				B68DDFF129F7B77D00960E06 /* ContentView.swift */,
-				B68DDFF329F7B77E00960E06 /* Assets.xcassets */,
 				B68DDFF529F7B77E00960E06 /* Preview Content */,
 			);
 			path = MiniChallengeOyeah;
@@ -65,6 +66,85 @@
 				B68DDFF629F7B77E00960E06 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B68DDFFD29F7BF1A00960E06 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B68DDFEF29F7B77D00960E06 /* MiniChallengeOyeahApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B68DDFFE29F7BF2900960E06 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B68DE02029F7C38D00960E06 /* Extension */,
+				B68DE01F29F7C38500960E06 /* Themes */,
+				B68DE01E29F7C37F00960E06 /* Utilities */,
+				B68DE01D29F7C37900960E06 /* Resources */,
+				B68DE01C29F7C37400960E06 /* Constants */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B68DDFFF29F7BF3000960E06 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		B68DE01C29F7C37400960E06 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B68DE01D29F7C37900960E06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B68DDFF329F7B77E00960E06 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B68DE01E29F7C37F00960E06 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B68DE01F29F7C38500960E06 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				B68DE02229F7C40200960E06 /* Presenters */,
+				B68DE02129F7C3FD00960E06 /* Colors */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		B68DE02029F7C38D00960E06 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B68DE02129F7C3FD00960E06 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		B68DE02229F7C40200960E06 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
