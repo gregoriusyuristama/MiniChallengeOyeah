@@ -11,7 +11,7 @@ import SwiftUI
 struct MiniChallengeOyeahApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandingPage()
         }
     }
 }
