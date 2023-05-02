@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3E94CA72A00BE61007DD6DB /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E94CA62A00BE61007DD6DB /* LandingPage.swift */; };
 		B68DDFF029F7B77D00960E06 /* MiniChallengeOyeahApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DDFEF29F7B77D00960E06 /* MiniChallengeOyeahApp.swift */; };
 		B68DDFF229F7B77D00960E06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DDFF129F7B77D00960E06 /* ContentView.swift */; };
 		B68DDFF429F7B77E00960E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68DDFF329F7B77E00960E06 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3E94CA62A00BE61007DD6DB /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LandingPage.swift; path = Presenters/Views/LandingPage.swift; sourceTree = SOURCE_ROOT; };
 		B68DDFEC29F7B77D00960E06 /* MiniChallengeOyeah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallengeOyeah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68DDFEF29F7B77D00960E06 /* MiniChallengeOyeahApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallengeOyeahApp.swift; sourceTree = "<group>"; };
 		B68DDFF129F7B77D00960E06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3E94CA52A00BE4F007DD6DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3E94CA62A00BE61007DD6DB /* LandingPage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B68DDFE329F7B77D00960E06 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +153,7 @@
 		B68DE02229F7C40200960E06 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				B3E94CA52A00BE4F007DD6DB /* Views */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -219,6 +230,7 @@
 			files = (
 				B68DDFF229F7B77D00960E06 /* ContentView.swift in Sources */,
 				B68DDFF029F7B77D00960E06 /* MiniChallengeOyeahApp.swift in Sources */,
+				B3E94CA72A00BE61007DD6DB /* LandingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
