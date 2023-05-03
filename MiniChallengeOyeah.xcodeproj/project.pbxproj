@@ -15,6 +15,9 @@
 		B68DE02529F7D6CF00960E06 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DE02429F7D6CF00960E06 /* SpeechRecognizer.swift */; };
 		B68DE02829F7DABD00960E06 /* InputPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DE02729F7DABD00960E06 /* InputPage.swift */; };
 		B6AE3EF929FFC5D6002A40BA /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3EF829FFC5D6002A40BA /* Prompt.swift */; };
+		B6AE3EFD2A015F2B002A40BA /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3EFC2A015F2B002A40BA /* AppColor.swift */; };
+		B6AE3F002A0164DF002A40BA /* NegativeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3EFF2A0164DF002A40BA /* NegativeCardView.swift */; };
+		B6AE3F022A016C10002A40BA /* PositiveCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3F012A016C10002A40BA /* PositiveCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		B68DE02429F7D6CF00960E06 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		B68DE02729F7DABD00960E06 /* InputPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPage.swift; sourceTree = "<group>"; };
 		B6AE3EF829FFC5D6002A40BA /* Prompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
+		B6AE3EFC2A015F2B002A40BA /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		B6AE3EFF2A0164DF002A40BA /* NegativeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeCardView.swift; sourceTree = "<group>"; };
+		B6AE3F012A016C10002A40BA /* PositiveCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,7 @@
 		B68DE02129F7C3FD00960E06 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
+				B6AE3EFC2A015F2B002A40BA /* AppColor.swift */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -188,6 +195,7 @@
 		B68DE02B29F7E05A00960E06 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				B6AE3EFE2A0160AE002A40BA /* Components */,
 				B68DE02C29F7E05F00960E06 /* Views */,
 			);
 			path = Presenters;
@@ -199,6 +207,15 @@
 				B68DE02729F7DABD00960E06 /* InputPage.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B6AE3EFE2A0160AE002A40BA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B6AE3EFF2A0164DF002A40BA /* NegativeCardView.swift */,
+				B6AE3F012A016C10002A40BA /* PositiveCardView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,8 +289,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B68DDFF229F7B77D00960E06 /* ContentView.swift in Sources */,
+				B6AE3F002A0164DF002A40BA /* NegativeCardView.swift in Sources */,
 				B6AE3EF929FFC5D6002A40BA /* Prompt.swift in Sources */,
 				B68DE02829F7DABD00960E06 /* InputPage.swift in Sources */,
+				B6AE3EFD2A015F2B002A40BA /* AppColor.swift in Sources */,
+				B6AE3F022A016C10002A40BA /* PositiveCardView.swift in Sources */,
 				B60916D029F8021700D1C0B5 /* IndoTextClassifier.mlmodel in Sources */,
 				B68DDFF029F7B77D00960E06 /* MiniChallengeOyeahApp.swift in Sources */,
 				B68DE02529F7D6CF00960E06 /* SpeechRecognizer.swift in Sources */,
