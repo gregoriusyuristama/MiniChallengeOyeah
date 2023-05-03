@@ -19,7 +19,7 @@
 		B6AE3EFD2A015F2B002A40BA /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3EFC2A015F2B002A40BA /* AppColor.swift */; };
 		B6AE3F002A0164DF002A40BA /* NegativeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3EFF2A0164DF002A40BA /* NegativeCardView.swift */; };
 		B6AE3F022A016C10002A40BA /* PositiveCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3F012A016C10002A40BA /* PositiveCardView.swift */; };
-		B6AF9ABE2A02141F00930212 /* IndoTextClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9ABD2A02141F00930212 /* IndoTextClassifier.mlmodel */; };
+		B6AF9AC02A0215B600930212 /* IndoTextClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9ABF2A0215B600930212 /* IndoTextClassifier.mlmodel */; };
 		B74922C92A00C30E0056D6C5 /* TipsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74922C82A00C30E0056D6C5 /* TipsPage.swift */; };
 		B74922CB2A00C3650056D6C5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74922CA2A00C3650056D6C5 /* CardView.swift */; };
 		B74922CD2A00C5600056D6C5 /* tipsbg.png in Resources */ = {isa = PBXBuildFile; fileRef = B74922CC2A00C5600056D6C5 /* tipsbg.png */; };
@@ -40,7 +40,7 @@
 		B6AE3EFC2A015F2B002A40BA /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		B6AE3EFF2A0164DF002A40BA /* NegativeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeCardView.swift; sourceTree = "<group>"; };
 		B6AE3F012A016C10002A40BA /* PositiveCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveCardView.swift; sourceTree = "<group>"; };
-		B6AF9ABD2A02141F00930212 /* IndoTextClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = IndoTextClassifier.mlmodel; sourceTree = "<group>"; };
+		B6AF9ABF2A0215B600930212 /* IndoTextClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = IndoTextClassifier.mlmodel; sourceTree = "<group>"; };
 		B74922C82A00C30E0056D6C5 /* TipsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TipsPage.swift; path = Presenters/Views/TipsPage.swift; sourceTree = SOURCE_ROOT; };
 		B74922CA2A00C3650056D6C5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = Presenters/Views/CardView.swift; sourceTree = SOURCE_ROOT; };
 		B74922CC2A00C5600056D6C5 /* tipsbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipsbg.png; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 		B68DE01E29F7C37F00960E06 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				B6AF9ABD2A02141F00930212 /* IndoTextClassifier.mlmodel */,
+				B6AF9ABF2A0215B600930212 /* IndoTextClassifier.mlmodel */,
 				B68DE02429F7D6CF00960E06 /* SpeechRecognizer.swift */,
 			);
 			path = Utilities;
@@ -314,7 +314,7 @@
 			files = (
 				B3E94CA92A00CA8F007DD6DB /* CategoryTipsPage.swift in Sources */,
 				B68DDFF229F7B77D00960E06 /* ContentView.swift in Sources */,
-				B6AF9ABE2A02141F00930212 /* IndoTextClassifier.mlmodel in Sources */,
+				B6AF9AC02A0215B600930212 /* IndoTextClassifier.mlmodel in Sources */,
 				B6AE3F002A0164DF002A40BA /* NegativeCardView.swift in Sources */,
 				B6AE3EF929FFC5D6002A40BA /* Prompt.swift in Sources */,
 				B68DE02829F7DABD00960E06 /* InputPage.swift in Sources */,
