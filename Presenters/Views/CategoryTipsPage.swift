@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CategoryTipsPage: View {
     var body: some View {
-        NavigationView{
+      
             GeometryReader{ geo in
                 ZStack{
                     Image("CTP")
@@ -88,7 +88,7 @@ struct CategoryTipsPage: View {
             .ignoresSafeArea()
         }
     }
-}
+
 
 struct CategoryTipsPage_Previews: PreviewProvider {
     static var previews: some View {
