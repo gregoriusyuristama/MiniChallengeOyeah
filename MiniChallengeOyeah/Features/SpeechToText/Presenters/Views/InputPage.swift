@@ -9,6 +9,9 @@ import SwiftUI
 import CoreML
 
 struct InputPage: View {
+    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     @State private var textFieldText: String = ""
     @StateObject var speechRecognizer = SpeechRecognizer()
     
@@ -25,6 +28,10 @@ struct InputPage: View {
                     .scaledToFit()
                     .frame(width: geo.size.width, height: geo.size.height)
                     .opacity(0.2)
+                    .gesture(
+                        TapGesture()
+                            .onEnded { UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil) }
+                    )
                 VStack(spacing: 20){
                     TextEditor(text: $textFieldText)
                         .disabled(isRecording)
@@ -38,10 +45,6 @@ struct InputPage: View {
                         .onChange(of: speechRecognizer.transcript){ newValue in
                             textFieldText = newValue
                         }
-                        .gesture(
-                            TapGesture()
-                                .onEnded { UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil) }
-                        )
                         .overlay(RoundedRectangle(cornerRadius: 50)
                             .stroke(AppColor.blueGradient
                                     , lineWidth: 5))
@@ -83,23 +86,24 @@ struct InputPage: View {
                     }label: {
                         ZStack {
                             AppColor.blueGradient
-                                .frame(width: 150, height: 75)
+                                .frame(width: 214, height: 77)
                                 .mask{
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .frame(width: 150, height: 75)
+                                    RoundedRectangle(cornerRadius: 26)
+                                        .frame(width: 214, height: 77)
                                 }
                            
                             Text(Prompt.Button.review)
                                 .padding()
-                                .font(.system(size: 24,weight: .bold))
+                                .font(.custom(AppFonts.mediumFont, size: 39))
                                 .foregroundColor(AppColor.orangeApp)
                         }
                     }
                     .offset(y: -45)
                 }
                 if testOutput == "positive" {
-                    PositiveCardView()
-                        .offset(y: -80)
+                    PositiveCardView(doClose: self.doToggleShowCard)
+                        .offset(y: -35)
+                        .opacity(isButtonTapped ? 1 : 0)
                 } else if testOutput == "negative"{
                     NegativeCardView()
                         .offset(y: -300)
@@ -111,11 +115,19 @@ struct InputPage: View {
                         .offset(y: -300)
                         .opacity(isButtonTapped ? 0 : 1)
             }
-            
         }
         .ignoresSafeArea()
-        
-        
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading:
+            Button{
+            self.presentationMode.wrappedValue.dismiss()
+        }label:{
+            Image(systemName: "house.fill")
+                .foregroundColor(AppColor.orangeHomeIconColor)
+        })
+    }
+    func doToggleShowCard(){
+        isButtonTapped.toggle()
     }
 }
 

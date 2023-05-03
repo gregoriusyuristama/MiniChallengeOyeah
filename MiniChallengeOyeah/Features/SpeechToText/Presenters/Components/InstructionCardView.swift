@@ -17,12 +17,15 @@ struct InstructionCardView: View {
                 Text("Tap \(Image(systemName: "mic.fill")) to start")
                     .foregroundColor(AppColor.orangeCapsuleColor)
                     .fontWeight(.semibold)
+                    .font(.custom(AppFonts.mediumFont, size: 15))
                 + Text(" ,\ntap again when you")
                     .foregroundColor(Color.white)
                     .fontWeight(.semibold)
+                    .font(.custom(AppFonts.mediumFont, size: 15))
                 + Text("\nwant it to stop")
                     .foregroundColor(Color.white)
                     .fontWeight(.semibold)
+                    .font(.custom(AppFonts.mediumFont, size: 15))
             }
             .multilineTextAlignment(.center)
         }

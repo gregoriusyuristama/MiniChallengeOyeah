@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PositiveCardView: View {
+    var doClose: () -> ()
     var body: some View {
         ZStack {
             ZStack{
@@ -19,9 +20,10 @@ struct PositiveCardView: View {
                     .fill(AppColor.orangeCard)
                 .frame(width: 300, height: 300)
                 Text("YOU ARE GOOD TO GO!")
-                    .font(.system(size: 50))
-                    .bold()
-                    .italic()
+                    .font(.custom(AppFonts.italicSemiBoldFont, size: 50))
+//                    .font(.system(size: 50))
+//                    .bold()
+//                    .italic()
                     .multilineTextAlignment(.center)
                     .frame(width: 300, height: 300)
             }
@@ -39,14 +41,36 @@ struct PositiveCardView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 125, height: 125)
+                HStack{
+                    Spacer()
+                    VStack{
+                        Button{
+                            self.doClose()
+                        } label: {
+                            Circle()
+                                .fill(.black)
+                                .frame(width: 24, height: 24)
+                                .overlay{
+                                    Image(systemName: "xmark")
+                                        .resizable()
+                                        .frame(width: 10, height: 10)
+                                        .foregroundColor(.white)
+                                }
+                        }
+                        .frame(width: 24, height: 24)
+                        Spacer()
+                    }
+                }
+                
             }
             .offset(x: 50, y: -180)
+            .frame(width: 125, height: 125)
         }
     }
 }
 
 struct PositiveCardView_Previews: PreviewProvider {
     static var previews: some View {
-        PositiveCardView()
+        PositiveCardView(doClose: {})
     }
 }

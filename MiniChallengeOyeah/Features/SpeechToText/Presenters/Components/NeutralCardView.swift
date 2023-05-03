@@ -35,9 +35,9 @@ struct NeutralCardView: View {
                 Spacer()
                 Group{
                     Text("This sounds FINE, ")
-                        .bold()
+                        .font(.custom(AppFonts.semiboldFont, size: 10))
                     + Text("but if you want it better, you could add more positive statements")
-                    
+                        .font(.custom(AppFonts.mediumFont, size: 10))
                 }
                 .font(.system(size: 11))
                 .padding(.trailing, 46)

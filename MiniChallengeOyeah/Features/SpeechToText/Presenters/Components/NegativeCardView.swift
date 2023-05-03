@@ -34,9 +34,18 @@ struct NegativeCardView: View {
                         .padding(.top, -10)
                 }
                 Spacer()
-                Text("HMM... IT'S SOUNDS\nA LITTLE BIT NEGATIVE\nLET'S TRY ANOTHER\nAPPROACH :)")
-                    .font(.system(size: 11))
-                    .padding(.trailing, 47)
+                Group{
+                    Text("Hmm.. It’s sounds a little bit ")
+                        .font(.custom(AppFonts.mediumFont, size: 12))
+                    + Text("NEGATIVE ")
+                        .font(.custom(AppFonts.semiboldFont, size: 12))
+                        .foregroundColor(AppColor.blueCapsuleColor)
+                    + Text("Let’s try another approach ;)")
+                        .font(.custom(AppFonts.mediumFont, size: 12))
+//                        .font(.system(size: 11))
+                    
+                }
+                .padding(.trailing, 47)
             }
             .frame(width: 300, height: 120)
                 

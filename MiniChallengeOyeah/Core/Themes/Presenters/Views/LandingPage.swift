@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LandingPage: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var body: some View {
         NavigationView{
             GeometryReader { geo in
@@ -23,8 +25,7 @@ struct LandingPage: View {
                             .offset(y: -230)
                         
                         HStack{
-                            NavigationLink(destination:CategoryTipsPage())
-                            {
+                            NavigationLink(destination:CategoryTipsPage()){
                                 Circle()
                                     .fill(.clear)
                             }
@@ -32,8 +33,7 @@ struct LandingPage: View {
                             .offset(y: -200)
                             .offset(x:-11)
                             
-                            NavigationLink(destination:InputPage())
-                            {
+                            NavigationLink(destination: InputPage()){
                                 Circle()
                                     .fill(.clear)
                             }

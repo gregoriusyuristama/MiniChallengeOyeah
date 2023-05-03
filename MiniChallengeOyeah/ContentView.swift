@@ -10,7 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         LandingPage()
+            .onAppear{
+                
+            }
     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {

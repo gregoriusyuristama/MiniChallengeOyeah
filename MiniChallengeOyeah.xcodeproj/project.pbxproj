@@ -17,13 +17,16 @@
 		B6AE3EFD2A015F2B002A40BA /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3EFC2A015F2B002A40BA /* AppColor.swift */; };
 		B6AE3F002A0164DF002A40BA /* NegativeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3EFF2A0164DF002A40BA /* NegativeCardView.swift */; };
 		B6AE3F022A016C10002A40BA /* PositiveCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3F012A016C10002A40BA /* PositiveCardView.swift */; };
-		B6AF9AC02A0215B600930212 /* IndoTextClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9ABF2A0215B600930212 /* IndoTextClassifier.mlmodel */; };
 		B6AF9ACA2A021BC100930212 /* TipsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9AC62A021BC100930212 /* TipsPage.swift */; };
 		B6AF9ACB2A021BC100930212 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9AC72A021BC100930212 /* CardView.swift */; };
 		B6AF9ACC2A021BC100930212 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9AC82A021BC100930212 /* LandingPage.swift */; };
 		B6AF9ACD2A021BC100930212 /* CategoryTipsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9AC92A021BC100930212 /* CategoryTipsPage.swift */; };
 		B6AF9ACF2A021D3C00930212 /* InstructionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9ACE2A021D3C00930212 /* InstructionCardView.swift */; };
 		B6AF9AD12A02247B00930212 /* NeutralCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9AD02A02247B00930212 /* NeutralCardView.swift */; };
+		B6AF9AD52A0230FE00930212 /* IndoTextClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9AD42A0230FE00930212 /* IndoTextClassifier.mlmodel */; };
+		B6AF9AD82A02545900930212 /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6AF9AD72A02545900930212 /* Montserrat-VariableFont_wght.ttf */; };
+		B6AF9ADA2A0257F000930212 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9AD92A0257F000930212 /* AppFonts.swift */; };
+		B6AF9ADC2A025AAC00930212 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6AF9ADB2A025AAC00930212 /* Montserrat-Italic-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,13 +42,16 @@
 		B6AE3EFC2A015F2B002A40BA /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		B6AE3EFF2A0164DF002A40BA /* NegativeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeCardView.swift; sourceTree = "<group>"; };
 		B6AE3F012A016C10002A40BA /* PositiveCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveCardView.swift; sourceTree = "<group>"; };
-		B6AF9ABF2A0215B600930212 /* IndoTextClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = IndoTextClassifier.mlmodel; sourceTree = "<group>"; };
 		B6AF9AC62A021BC100930212 /* TipsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsPage.swift; sourceTree = "<group>"; };
 		B6AF9AC72A021BC100930212 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B6AF9AC82A021BC100930212 /* LandingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		B6AF9AC92A021BC100930212 /* CategoryTipsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTipsPage.swift; sourceTree = "<group>"; };
 		B6AF9ACE2A021D3C00930212 /* InstructionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionCardView.swift; sourceTree = "<group>"; };
 		B6AF9AD02A02247B00930212 /* NeutralCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeutralCardView.swift; sourceTree = "<group>"; };
+		B6AF9AD42A0230FE00930212 /* IndoTextClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = IndoTextClassifier.mlmodel; sourceTree = "<group>"; };
+		B6AF9AD72A02545900930212 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		B6AF9AD92A0257F000930212 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		B6AF9ADB2A025AAC00930212 /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,8 @@
 		B68DE01D29F7C37900960E06 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B6AF9ADB2A025AAC00930212 /* Montserrat-Italic-VariableFont_wght.ttf */,
+				B6AF9AD72A02545900930212 /* Montserrat-VariableFont_wght.ttf */,
 				B68DDFF329F7B77E00960E06 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -143,7 +151,7 @@
 		B68DE01E29F7C37F00960E06 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				B6AF9ABF2A0215B600930212 /* IndoTextClassifier.mlmodel */,
+				B6AF9AD42A0230FE00930212 /* IndoTextClassifier.mlmodel */,
 				B68DE02429F7D6CF00960E06 /* SpeechRecognizer.swift */,
 			);
 			path = Utilities;
@@ -152,6 +160,7 @@
 		B68DE01F29F7C38500960E06 /* Themes */ = {
 			isa = PBXGroup;
 			children = (
+				B6AF9AD62A02541D00930212 /* Font */,
 				B68DE02229F7C40200960E06 /* Presenters */,
 				B68DE02129F7C3FD00960E06 /* Colors */,
 			);
@@ -244,6 +253,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B6AF9AD62A02541D00930212 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				B6AF9AD92A0257F000930212 /* AppFonts.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -302,7 +319,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6AF9ADC2A025AAC00930212 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
 				B68DDFF729F7B77E00960E06 /* Preview Assets.xcassets in Resources */,
+				B6AF9AD82A02545900930212 /* Montserrat-VariableFont_wght.ttf in Resources */,
 				B68DDFF429F7B77E00960E06 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,10 +333,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6AF9AD52A0230FE00930212 /* IndoTextClassifier.mlmodel in Sources */,
 				B68DDFF229F7B77D00960E06 /* ContentView.swift in Sources */,
-				B6AF9AC02A0215B600930212 /* IndoTextClassifier.mlmodel in Sources */,
 				B6AF9ACC2A021BC100930212 /* LandingPage.swift in Sources */,
 				B6AF9ACF2A021D3C00930212 /* InstructionCardView.swift in Sources */,
+				B6AF9ADA2A0257F000930212 /* AppFonts.swift in Sources */,
 				B6AF9ACA2A021BC100930212 /* TipsPage.swift in Sources */,
 				B6AF9ACD2A021BC100930212 /* CategoryTipsPage.swift in Sources */,
 				B6AE3F002A0164DF002A40BA /* NegativeCardView.swift in Sources */,
