@@ -17,7 +17,7 @@ struct AppColor {
     static let blueCapsuleColor = Color("blueCapsuleColor")
     static let orangeHomeIconColor = Color("orangeHomeIconColor")
     
-    static let blueGradient = LinearGradient(gradient: Gradient(colors: [Color("blueGradientStart"), Color("blueGradientEnd")]), startPoint: .leading, endPoint: .trailing)
+    static let blueGradient = LinearGradient(gradient: Gradient(colors: [blueGradientStart, blueGradientEnd]), startPoint: .leading, endPoint: .trailing)
 
     private init() {}
 }

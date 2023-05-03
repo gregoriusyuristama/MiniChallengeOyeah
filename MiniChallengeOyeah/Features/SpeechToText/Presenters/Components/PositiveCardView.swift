@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PositiveCardView: View {
     var doClose: () -> ()
+    
     var body: some View {
         ZStack {
             ZStack{
@@ -19,11 +20,8 @@ struct PositiveCardView: View {
                 RoundedRectangle(cornerRadius: 40)
                     .fill(AppColor.orangeCard)
                 .frame(width: 300, height: 300)
-                Text("YOU ARE GOOD TO GO!")
+                Text(Prompt.Card.positiveText)
                     .font(.custom(AppFonts.italicSemiBoldFont, size: 50))
-//                    .font(.system(size: 50))
-//                    .bold()
-//                    .italic()
                     .multilineTextAlignment(.center)
                     .frame(width: 300, height: 300)
             }

@@ -12,14 +12,14 @@ struct InputPage: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
-    @State private var textFieldText: String = ""
     @StateObject var speechRecognizer = SpeechRecognizer()
     
-    @State private var testOutput = ""
+    @State private var textFieldText: String = ""
+    @State private var sentimentOutput = ""
     @State private var isButtonTapped = false
+    @State private var isRecording = false
     
     let textMlModel = try? IndoTextClassifier.init(configuration: MLModelConfiguration())
-    @State private var isRecording = false
     var body: some View {
         GeometryReader{ geo in
             ZStack{
@@ -48,7 +48,6 @@ struct InputPage: View {
                         .overlay(RoundedRectangle(cornerRadius: 50)
                             .stroke(AppColor.blueGradient
                                     , lineWidth: 5))
-                    
                         .padding(.top, 160)
                     Button{
                         isRecording.toggle()
@@ -73,7 +72,6 @@ struct InputPage: View {
                                 Image(systemName: isRecording ? Prompt.Icon.stopRecordIcon : Prompt.Icon.startRecordIcon)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-    //                                .foregroundColor(.black)
                                     .frame(width: 40, height: 40)
                             }
                             .frame(width: 50, height: 50)
@@ -81,7 +79,7 @@ struct InputPage: View {
                     }
                     .offset(y: -65)
                     Button{
-                        testOutput = try! textMlModel!.prediction(text: textFieldText).label
+                        sentimentOutput = try! textMlModel!.prediction(text: textFieldText).label
                         isButtonTapped = true
                     }label: {
                         ZStack {
@@ -100,14 +98,14 @@ struct InputPage: View {
                     }
                     .offset(y: -45)
                 }
-                if testOutput == "positive" {
+                if sentimentOutput == "positive" {
                     PositiveCardView(doClose: self.doToggleShowCard)
                         .offset(y: -35)
                         .opacity(isButtonTapped ? 1 : 0)
-                } else if testOutput == "negative"{
+                } else if sentimentOutput == "negative"{
                     NegativeCardView()
                         .offset(y: -300)
-                } else if testOutput == "neutral" {
+                } else if sentimentOutput == "neutral" {
                     NeutralCardView()
                         .offset(y: -300)
                 }
