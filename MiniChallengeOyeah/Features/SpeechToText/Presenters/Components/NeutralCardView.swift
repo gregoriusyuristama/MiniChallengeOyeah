@@ -1,17 +1,17 @@
 //
-//  NegativeCardView.swift
+//  NeutralCardView.swift
 //  MiniChallengeOyeah
 //
-//  Created by Gregorius Yuristama Nugraha on 5/2/23.
+//  Created by Gregorius Yuristama Nugraha on 5/3/23.
 //
 
 import SwiftUI
 
-struct NegativeCardView: View {
+struct NeutralCardView: View {
     var body: some View {
         ZStack {
             Capsule()
-                .fill(AppColor.orangeCapsuleColor)
+                .fill(AppColor.blueCapsuleColor)
                 .frame(width: 247, height: 105)
             HStack{
                 ZStack{
@@ -24,7 +24,6 @@ struct NegativeCardView: View {
                                         , lineWidth: 4)
                         }
                         .padding(.leading, 40)
-//                        .padding(.top, 10)
                         
                     Image("RobotIcon")
                         .resizable()
@@ -35,26 +34,22 @@ struct NegativeCardView: View {
                 }
                 Spacer()
                 Group{
-                    Text("Hmm.. It’s sounds a little bit ")
-                        .font(.custom(AppFonts.mediumFont, size: 12))
-                    + Text("NEGATIVE ")
-                        .font(.custom(AppFonts.semiboldFont, size: 12))
-                        .foregroundColor(AppColor.blueCapsuleColor)
-                    + Text("Let’s try another approach ;)")
-                        .font(.custom(AppFonts.mediumFont, size: 12))
-//                        .font(.system(size: 11))
-                    
+                    Text("This sounds FINE, ")
+                        .font(.custom(AppFonts.semiboldFont, size: 10))
+                    + Text("but if you want it better, you could add more positive statements")
+                        .font(.custom(AppFonts.mediumFont, size: 10))
                 }
-                .padding(.trailing, 47)
+                .font(.system(size: 11))
+                .padding(.trailing, 46)
+                .foregroundColor(.white)
             }
             .frame(width: 300, height: 120)
                 
-        }
-    }
+        }    }
 }
 
-struct NegativeCardView_Previews: PreviewProvider {
+struct NeutralCardView_Previews: PreviewProvider {
     static var previews: some View {
-        NegativeCardView()
+        NeutralCardView()
     }
 }

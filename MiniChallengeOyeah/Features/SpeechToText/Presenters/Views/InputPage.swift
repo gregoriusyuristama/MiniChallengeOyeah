@@ -9,13 +9,17 @@ import SwiftUI
 import CoreML
 
 struct InputPage: View {
-    @State private var textFieldText: String = ""
+    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     @StateObject var speechRecognizer = SpeechRecognizer()
     
-    @State private var testOutput = ""
+    @State private var textFieldText: String = ""
+    @State private var sentimentOutput = ""
+    @State private var isButtonTapped = false
+    @State private var isRecording = false
     
     let textMlModel = try? IndoTextClassifier.init(configuration: MLModelConfiguration())
-    @State private var isRecording = false
     var body: some View {
         GeometryReader{ geo in
             ZStack{
@@ -23,7 +27,11 @@ struct InputPage: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: geo.size.width, height: geo.size.height)
-//                    .opacity(0.2)
+                    .opacity(0.2)
+                    .gesture(
+                        TapGesture()
+                            .onEnded { UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil) }
+                    )
                 VStack(spacing: 20){
                     TextEditor(text: $textFieldText)
                         .disabled(isRecording)
@@ -37,14 +45,9 @@ struct InputPage: View {
                         .onChange(of: speechRecognizer.transcript){ newValue in
                             textFieldText = newValue
                         }
-                        .gesture(
-                            TapGesture()
-                                .onEnded { UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil) }
-                        )
                         .overlay(RoundedRectangle(cornerRadius: 50)
                             .stroke(AppColor.blueGradient
                                     , lineWidth: 5))
-                    
                         .padding(.top, 160)
                     Button{
                         isRecording.toggle()
@@ -69,7 +72,6 @@ struct InputPage: View {
                                 Image(systemName: isRecording ? Prompt.Icon.stopRecordIcon : Prompt.Icon.startRecordIcon)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-    //                                .foregroundColor(.black)
                                     .frame(width: 40, height: 40)
                             }
                             .frame(width: 50, height: 50)
@@ -77,37 +79,53 @@ struct InputPage: View {
                     }
                     .offset(y: -65)
                     Button{
-                        testOutput = try! textMlModel!.prediction(text: textFieldText).label
+                        sentimentOutput = try! textMlModel!.prediction(text: textFieldText).label
+                        isButtonTapped = true
                     }label: {
                         ZStack {
                             AppColor.blueGradient
-                                .frame(width: 150, height: 75)
+                                .frame(width: 214, height: 77)
                                 .mask{
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .frame(width: 150, height: 75)
+                                    RoundedRectangle(cornerRadius: 26)
+                                        .frame(width: 214, height: 77)
                                 }
                            
                             Text(Prompt.Button.review)
                                 .padding()
-                                .font(.system(size: 24,weight: .bold))
+                                .font(.custom(AppFonts.mediumFont, size: 39))
                                 .foregroundColor(AppColor.orangeApp)
                         }
                     }
                     .offset(y: -45)
                 }
-                if testOutput == "positive" {
-                    PositiveCardView()
-                        .offset(y: -80)
-                } else if testOutput == "negative"{
+                if sentimentOutput == "positive" {
+                    PositiveCardView(doClose: self.doToggleShowCard)
+                        .offset(y: -35)
+                        .opacity(isButtonTapped ? 1 : 0)
+                } else if sentimentOutput == "negative"{
                     NegativeCardView()
                         .offset(y: -300)
+                } else if sentimentOutput == "neutral" {
+                    NeutralCardView()
+                        .offset(y: -300)
                 }
+                InstructionCardView()
+                        .offset(y: -300)
+                        .opacity(isButtonTapped ? 0 : 1)
             }
-            
         }
         .ignoresSafeArea()
-        
-        
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading:
+            Button{
+            self.presentationMode.wrappedValue.dismiss()
+        }label:{
+            Image(systemName: "house.fill")
+                .foregroundColor(AppColor.orangeHomeIconColor)
+        })
+    }
+    func doToggleShowCard(){
+        isButtonTapped.toggle()
     }
 }
 

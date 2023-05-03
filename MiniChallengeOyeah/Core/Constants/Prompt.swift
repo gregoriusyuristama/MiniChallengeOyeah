@@ -27,13 +27,18 @@ extension Prompt {
     }
 }
 
-
-
 extension Prompt {
     struct Icon {
         static let startRecordIcon = "mic.fill"
         static let stopRecordIcon = "stop.fill"
         static var name = (first: "Taylor", last: "Swift")
+        private init () {}
+    }
+}
+
+extension Prompt{
+    struct Card{
+        static let positiveText = "YOU ARE GOOD TO GO!"
         private init () {}
     }
 }
