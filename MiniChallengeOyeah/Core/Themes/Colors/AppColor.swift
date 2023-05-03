@@ -14,6 +14,7 @@ struct AppColor {
     static let orangeCapsuleColor = Color("orangeCapsuleColor")
     static let orangeStroke = Color("orangeStroke")
     static let orangeCard = Color("orangeCard")
+    static let blueCapsuleColor = Color("blueCapsuleColor")
     
     static let blueGradient = LinearGradient(gradient: Gradient(colors: [Color("blueGradientStart"), Color("blueGradientEnd")]), startPoint: .leading, endPoint: .trailing)
 

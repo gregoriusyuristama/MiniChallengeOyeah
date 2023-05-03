@@ -13,6 +13,7 @@ struct InputPage: View {
     @StateObject var speechRecognizer = SpeechRecognizer()
     
     @State private var testOutput = ""
+    @State private var isButtonTapped = false
     
     let textMlModel = try? IndoTextClassifier.init(configuration: MLModelConfiguration())
     @State private var isRecording = false
@@ -23,7 +24,7 @@ struct InputPage: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: geo.size.width, height: geo.size.height)
-//                    .opacity(0.2)
+                    .opacity(0.2)
                 VStack(spacing: 20){
                     TextEditor(text: $textFieldText)
                         .disabled(isRecording)
@@ -78,6 +79,7 @@ struct InputPage: View {
                     .offset(y: -65)
                     Button{
                         testOutput = try! textMlModel!.prediction(text: textFieldText).label
+                        isButtonTapped = true
                     }label: {
                         ZStack {
                             AppColor.blueGradient
@@ -101,7 +103,13 @@ struct InputPage: View {
                 } else if testOutput == "negative"{
                     NegativeCardView()
                         .offset(y: -300)
+                } else if testOutput == "neutral" {
+                    NeutralCardView()
+                        .offset(y: -300)
                 }
+                InstructionCardView()
+                        .offset(y: -300)
+                        .opacity(isButtonTapped ? 0 : 1)
             }
             
         }

@@ -1,17 +1,17 @@
 //
-//  NegativeCardView.swift
+//  NeutralCardView.swift
 //  MiniChallengeOyeah
 //
-//  Created by Gregorius Yuristama Nugraha on 5/2/23.
+//  Created by Gregorius Yuristama Nugraha on 5/3/23.
 //
 
 import SwiftUI
 
-struct NegativeCardView: View {
+struct NeutralCardView: View {
     var body: some View {
         ZStack {
             Capsule()
-                .fill(AppColor.orangeCapsuleColor)
+                .fill(AppColor.blueCapsuleColor)
                 .frame(width: 247, height: 105)
             HStack{
                 ZStack{
@@ -24,7 +24,6 @@ struct NegativeCardView: View {
                                         , lineWidth: 4)
                         }
                         .padding(.leading, 40)
-//                        .padding(.top, 10)
                         
                     Image("RobotIcon")
                         .resizable()
@@ -34,18 +33,23 @@ struct NegativeCardView: View {
                         .padding(.top, -10)
                 }
                 Spacer()
-                Text("HMM... IT'S SOUNDS\nA LITTLE BIT NEGATIVE\nLET'S TRY ANOTHER\nAPPROACH :)")
-                    .font(.system(size: 11))
-                    .padding(.trailing, 47)
+                Group{
+                    Text("This sounds FINE, ")
+                        .bold()
+                    + Text("but if you want it better, you could add more positive statements")
+                    
+                }
+                .font(.system(size: 11))
+                .padding(.trailing, 46)
+                .foregroundColor(.white)
             }
             .frame(width: 300, height: 120)
                 
-        }
-    }
+        }    }
 }
 
-struct NegativeCardView_Previews: PreviewProvider {
+struct NeutralCardView_Previews: PreviewProvider {
     static var previews: some View {
-        NegativeCardView()
+        NeutralCardView()
     }
 }
