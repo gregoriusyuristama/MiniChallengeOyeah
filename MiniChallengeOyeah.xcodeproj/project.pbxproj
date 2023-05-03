@@ -7,18 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B60916D029F8021700D1C0B5 /* IndoTextClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B60916CF29F8021700D1C0B5 /* IndoTextClassifier.mlmodel */; };
 		B68DDFF029F7B77D00960E06 /* MiniChallengeOyeahApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DDFEF29F7B77D00960E06 /* MiniChallengeOyeahApp.swift */; };
 		B68DDFF229F7B77D00960E06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DDFF129F7B77D00960E06 /* ContentView.swift */; };
 		B68DDFF429F7B77E00960E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68DDFF329F7B77E00960E06 /* Assets.xcassets */; };
 		B68DDFF729F7B77E00960E06 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68DDFF629F7B77E00960E06 /* Preview Assets.xcassets */; };
+		B68DE02529F7D6CF00960E06 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DE02429F7D6CF00960E06 /* SpeechRecognizer.swift */; };
+		B68DE02829F7DABD00960E06 /* InputPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DE02729F7DABD00960E06 /* InputPage.swift */; };
+		B6AE3EF929FFC5D6002A40BA /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3EF829FFC5D6002A40BA /* Prompt.swift */; };
+		B6AE3EFD2A015F2B002A40BA /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3EFC2A015F2B002A40BA /* AppColor.swift */; };
+		B6AE3F002A0164DF002A40BA /* NegativeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3EFF2A0164DF002A40BA /* NegativeCardView.swift */; };
+		B6AE3F022A016C10002A40BA /* PositiveCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3F012A016C10002A40BA /* PositiveCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B60916CF29F8021700D1C0B5 /* IndoTextClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = IndoTextClassifier.mlmodel; path = "../../../../../Apple Academy/Mini 1/IndoTextClassifier.mlmodel"; sourceTree = "<group>"; };
 		B68DDFEC29F7B77D00960E06 /* MiniChallengeOyeah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallengeOyeah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68DDFEF29F7B77D00960E06 /* MiniChallengeOyeahApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallengeOyeahApp.swift; sourceTree = "<group>"; };
 		B68DDFF129F7B77D00960E06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B68DDFF329F7B77E00960E06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B68DDFF629F7B77E00960E06 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B68DE02329F7D63C00960E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B68DE02429F7D6CF00960E06 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		B68DE02729F7DABD00960E06 /* InputPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPage.swift; sourceTree = "<group>"; };
+		B6AE3EF829FFC5D6002A40BA /* Prompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
+		B6AE3EFC2A015F2B002A40BA /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		B6AE3EFF2A0164DF002A40BA /* NegativeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeCardView.swift; sourceTree = "<group>"; };
+		B6AE3F012A016C10002A40BA /* PositiveCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +66,7 @@
 		B68DDFEE29F7B77D00960E06 /* MiniChallengeOyeah */ = {
 			isa = PBXGroup;
 			children = (
+				B68DE02329F7D63C00960E06 /* Info.plist */,
 				B68DDFFF29F7BF3000960E06 /* Features */,
 				B68DDFFE29F7BF2900960E06 /* Core */,
 				B68DDFFD29F7BF1A00960E06 /* Application */,
@@ -91,6 +107,7 @@
 		B68DDFFF29F7BF3000960E06 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				B68DE02629F7DA7C00960E06 /* SpeechToText */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -98,6 +115,7 @@
 		B68DE01C29F7C37400960E06 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				B6AE3EF829FFC5D6002A40BA /* Prompt.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -113,6 +131,8 @@
 		B68DE01E29F7C37F00960E06 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B60916CF29F8021700D1C0B5 /* IndoTextClassifier.mlmodel */,
+				B68DE02429F7D6CF00960E06 /* SpeechRecognizer.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -136,6 +156,7 @@
 		B68DE02129F7C3FD00960E06 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
+				B6AE3EFC2A015F2B002A40BA /* AppColor.swift */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -145,6 +166,56 @@
 			children = (
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		B68DE02629F7DA7C00960E06 /* SpeechToText */ = {
+			isa = PBXGroup;
+			children = (
+				B68DE02B29F7E05A00960E06 /* Presenters */,
+				B68DE02A29F7E04A00960E06 /* ViewModel */,
+				B68DE02929F7E04600960E06 /* Models */,
+			);
+			path = SpeechToText;
+			sourceTree = "<group>";
+		};
+		B68DE02929F7E04600960E06 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B68DE02A29F7E04A00960E06 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B68DE02B29F7E05A00960E06 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				B6AE3EFE2A0160AE002A40BA /* Components */,
+				B68DE02C29F7E05F00960E06 /* Views */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		B68DE02C29F7E05F00960E06 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B68DE02729F7DABD00960E06 /* InputPage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6AE3EFE2A0160AE002A40BA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B6AE3EFF2A0164DF002A40BA /* NegativeCardView.swift */,
+				B6AE3F012A016C10002A40BA /* PositiveCardView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +289,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B68DDFF229F7B77D00960E06 /* ContentView.swift in Sources */,
+				B6AE3F002A0164DF002A40BA /* NegativeCardView.swift in Sources */,
+				B6AE3EF929FFC5D6002A40BA /* Prompt.swift in Sources */,
+				B68DE02829F7DABD00960E06 /* InputPage.swift in Sources */,
+				B6AE3EFD2A015F2B002A40BA /* AppColor.swift in Sources */,
+				B6AE3F022A016C10002A40BA /* PositiveCardView.swift in Sources */,
+				B60916D029F8021700D1C0B5 /* IndoTextClassifier.mlmodel in Sources */,
 				B68DDFF029F7B77D00960E06 /* MiniChallengeOyeahApp.swift in Sources */,
+				B68DE02529F7D6CF00960E06 /* SpeechRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +428,9 @@
 				DEVELOPMENT_TEAM = U43A7X58YW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MiniChallengeOyeah/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "In order to use Speech to text we need your permission to access microphone";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "In order to use Speech to Text we need your permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -379,6 +460,9 @@
 				DEVELOPMENT_TEAM = U43A7X58YW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MiniChallengeOyeah/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "In order to use Speech to text we need your permission to access microphone";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "In order to use Speech to Text we need your permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
