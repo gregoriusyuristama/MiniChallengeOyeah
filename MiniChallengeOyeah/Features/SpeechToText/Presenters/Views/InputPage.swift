@@ -42,6 +42,7 @@ struct InputPage: View {
                         .frame(width: 300, height: 500)
                         .cornerRadius(50)
                         .shadow(radius: 10, x: 10, y:5)
+                        .font(.custom(AppFonts.mediumFont, size: 17))
                         .onChange(of: speechRecognizer.transcript){ newValue in
                             textFieldText = newValue
                         }
