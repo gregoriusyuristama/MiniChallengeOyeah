@@ -33,6 +33,9 @@
 		B6AF9AD82A02545900930212 /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6AF9AD72A02545900930212 /* Montserrat-VariableFont_wght.ttf */; };
 		B6AF9ADA2A0257F000930212 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9AD92A0257F000930212 /* AppFonts.swift */; };
 		B6AF9ADC2A025AAC00930212 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6AF9ADB2A025AAC00930212 /* Montserrat-Italic-VariableFont_wght.ttf */; };
+		B7BDA1D62A03755A00A8D3CB /* CareerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BDA1D52A03755A00A8D3CB /* CareerView.swift */; };
+		B7BDA1D82A03761300A8D3CB /* RelationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BDA1D72A03761300A8D3CB /* RelationView.swift */; };
+		B7BDA1DA2A03761F00A8D3CB /* FinanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BDA1D92A03761F00A8D3CB /* FinanceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,9 @@
 		B6AF9AD72A02545900930212 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		B6AF9AD92A0257F000930212 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		B6AF9ADB2A025AAC00930212 /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		B7BDA1D52A03755A00A8D3CB /* CareerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerView.swift; sourceTree = "<group>"; };
+		B7BDA1D72A03761300A8D3CB /* RelationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationView.swift; sourceTree = "<group>"; };
+		B7BDA1D92A03761F00A8D3CB /* FinanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +109,10 @@
 		B613E4C02A03656B006431B9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B613E4B52A0357FC006431B9 /* CategoryTipsPage.swift */,
 				B613E4B02A0357B0006431B9 /* TipsFinancePage.swift */,
 				B613E4B72A035D71006431B9 /* TipsCareerPage.swift */,
 				B613E4BB2A035DB0006431B9 /* TipsRelationshipPage.swift */,
+				B613E4B52A0357FC006431B9 /* CategoryTipsPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -259,6 +265,9 @@
 		B68DE02A29F7E04A00960E06 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B7BDA1D52A03755A00A8D3CB /* CareerView.swift */,
+				B7BDA1D72A03761300A8D3CB /* RelationView.swift */,
+				B7BDA1D92A03761F00A8D3CB /* FinanceView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -375,7 +384,9 @@
 				B6AF9AD52A0230FE00930212 /* IndoTextClassifier.mlmodel in Sources */,
 				B68DDFF229F7B77D00960E06 /* ContentView.swift in Sources */,
 				B6AF9ACC2A021BC100930212 /* (null) in Sources */,
+				B7BDA1D62A03755A00A8D3CB /* CareerView.swift in Sources */,
 				B6AF9ACF2A021D3C00930212 /* InstructionCardView.swift in Sources */,
+				B7BDA1D82A03761300A8D3CB /* RelationView.swift in Sources */,
 				B613E4B12A0357B0006431B9 /* CardFinanceView.swift in Sources */,
 				B613E4BA2A035DA1006431B9 /* CardCareerView.swift in Sources */,
 				B6AF9ADA2A0257F000930212 /* AppFonts.swift in Sources */,
@@ -392,6 +403,7 @@
 				B613E4BE2A035DC6006431B9 /* CardRelationshipView.swift in Sources */,
 				B6AE3F022A016C10002A40BA /* PositiveCardView.swift in Sources */,
 				B68DDFF029F7B77D00960E06 /* MiniChallengeOyeahApp.swift in Sources */,
+				B7BDA1DA2A03761F00A8D3CB /* FinanceView.swift in Sources */,
 				B68DE02529F7D6CF00960E06 /* SpeechRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
