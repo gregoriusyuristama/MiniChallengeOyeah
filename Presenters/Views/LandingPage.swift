@@ -32,7 +32,7 @@ struct LandingPage: View {
                             .offset(y: -200)
                             .offset(x:-11)
                             
-                            NavigationLink(destination:ContentView())
+                            NavigationLink(destination:InputPage())
                             {
                                 Circle()
                                     .fill(.clear)

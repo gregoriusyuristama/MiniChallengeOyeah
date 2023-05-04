@@ -23,6 +23,10 @@
 		B74922C92A00C30E0056D6C5 /* TipsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74922C82A00C30E0056D6C5 /* TipsPage.swift */; };
 		B74922CB2A00C3650056D6C5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74922CA2A00C3650056D6C5 /* CardView.swift */; };
 		B74922CD2A00C5600056D6C5 /* tipsbg.png in Resources */ = {isa = PBXBuildFile; fileRef = B74922CC2A00C5600056D6C5 /* tipsbg.png */; };
+		B74922CF2A021BEE0056D6C5 /* TipsCareerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74922CE2A021BEE0056D6C5 /* TipsCareerPage.swift */; };
+		B74922D12A021C380056D6C5 /* CardCareerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74922D02A021C380056D6C5 /* CardCareerView.swift */; };
+		B74922D32A021ECF0056D6C5 /* TipsRelationshipPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74922D22A021ECF0056D6C5 /* TipsRelationshipPage.swift */; };
+		B74922D52A021F100056D6C5 /* CardRelationshipPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74922D42A021F100056D6C5 /* CardRelationshipPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		B74922C82A00C30E0056D6C5 /* TipsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TipsPage.swift; path = Presenters/Views/TipsPage.swift; sourceTree = SOURCE_ROOT; };
 		B74922CA2A00C3650056D6C5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = Presenters/Views/CardView.swift; sourceTree = SOURCE_ROOT; };
 		B74922CC2A00C5600056D6C5 /* tipsbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipsbg.png; sourceTree = "<group>"; };
+		B74922CE2A021BEE0056D6C5 /* TipsCareerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsCareerPage.swift; sourceTree = SOURCE_ROOT; };
+		B74922D02A021C380056D6C5 /* CardCareerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCareerView.swift; sourceTree = SOURCE_ROOT; };
+		B74922D22A021ECF0056D6C5 /* TipsRelationshipPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsRelationshipPage.swift; sourceTree = SOURCE_ROOT; };
+		B74922D42A021F100056D6C5 /* CardRelationshipPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRelationshipPage.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +70,11 @@
 			children = (
 				B3E94CA62A00BE61007DD6DB /* LandingPage.swift */,
 				B74922C82A00C30E0056D6C5 /* TipsPage.swift */,
+				B74922CE2A021BEE0056D6C5 /* TipsCareerPage.swift */,
 				B74922CA2A00C3650056D6C5 /* CardView.swift */,
+				B74922D02A021C380056D6C5 /* CardCareerView.swift */,
+				B74922D22A021ECF0056D6C5 /* TipsRelationshipPage.swift */,
+				B74922D42A021F100056D6C5 /* CardRelationshipPage.swift */,
 				B3E94CA82A00CA8F007DD6DB /* CategoryTipsPage.swift */,
 			);
 			path = Views;
@@ -316,7 +328,11 @@
 				B68DDFF229F7B77D00960E06 /* ContentView.swift in Sources */,
 				B6AF9ABE2A02141F00930212 /* IndoTextClassifier.mlmodel in Sources */,
 				B6AE3F002A0164DF002A40BA /* NegativeCardView.swift in Sources */,
+				B74922D32A021ECF0056D6C5 /* TipsRelationshipPage.swift in Sources */,
+				B74922CF2A021BEE0056D6C5 /* TipsCareerPage.swift in Sources */,
 				B6AE3EF929FFC5D6002A40BA /* Prompt.swift in Sources */,
+				B74922D52A021F100056D6C5 /* CardRelationshipPage.swift in Sources */,
+				B74922D12A021C380056D6C5 /* CardCareerView.swift in Sources */,
 				B68DE02829F7DABD00960E06 /* InputPage.swift in Sources */,
 				B6AE3EFD2A015F2B002A40BA /* AppColor.swift in Sources */,
 				B6AE3F022A016C10002A40BA /* PositiveCardView.swift in Sources */,
