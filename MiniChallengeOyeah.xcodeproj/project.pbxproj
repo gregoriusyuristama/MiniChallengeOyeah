@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B613E4B12A0357B0006431B9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613E4AF2A0357B0006431B9 /* CardView.swift */; };
+		B613E4B22A0357B0006431B9 /* TipsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613E4B02A0357B0006431B9 /* TipsPage.swift */; };
+		B613E4B42A0357D5006431B9 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613E4B32A0357D5006431B9 /* LandingPage.swift */; };
+		B613E4B62A0357FC006431B9 /* CategoryTipsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613E4B52A0357FC006431B9 /* CategoryTipsPage.swift */; };
 		B68DDFF029F7B77D00960E06 /* MiniChallengeOyeahApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DDFEF29F7B77D00960E06 /* MiniChallengeOyeahApp.swift */; };
 		B68DDFF229F7B77D00960E06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DDFF129F7B77D00960E06 /* ContentView.swift */; };
 		B68DDFF429F7B77E00960E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68DDFF329F7B77E00960E06 /* Assets.xcassets */; };
@@ -17,10 +21,8 @@
 		B6AE3EFD2A015F2B002A40BA /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3EFC2A015F2B002A40BA /* AppColor.swift */; };
 		B6AE3F002A0164DF002A40BA /* NegativeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3EFF2A0164DF002A40BA /* NegativeCardView.swift */; };
 		B6AE3F022A016C10002A40BA /* PositiveCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE3F012A016C10002A40BA /* PositiveCardView.swift */; };
-		B6AF9ACA2A021BC100930212 /* TipsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9AC62A021BC100930212 /* TipsPage.swift */; };
-		B6AF9ACB2A021BC100930212 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9AC72A021BC100930212 /* CardView.swift */; };
-		B6AF9ACC2A021BC100930212 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9AC82A021BC100930212 /* LandingPage.swift */; };
-		B6AF9ACD2A021BC100930212 /* CategoryTipsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9AC92A021BC100930212 /* CategoryTipsPage.swift */; };
+		B6AF9ACC2A021BC100930212 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		B6AF9ACD2A021BC100930212 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		B6AF9ACF2A021D3C00930212 /* InstructionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9ACE2A021D3C00930212 /* InstructionCardView.swift */; };
 		B6AF9AD12A02247B00930212 /* NeutralCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9AD02A02247B00930212 /* NeutralCardView.swift */; };
 		B6AF9AD52A0230FE00930212 /* IndoTextClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B6AF9AD42A0230FE00930212 /* IndoTextClassifier.mlmodel */; };
@@ -30,9 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B3E94CA62A00BE61007DD6DB /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LandingPage.swift; path = MiniChallengeOyeah/Core/Themes/Presenters/Views/LandingPage.swift; sourceTree = SOURCE_ROOT; };
-		B3E94CA82A00CA8F007DD6DB /* CategoryTipsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryTipsPage.swift; path = MiniChallengeOyeah/Core/Themes/Presenters/Views/CategoryTipsPage.swift; sourceTree = SOURCE_ROOT; };
-
+		B613E4AF2A0357B0006431B9 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B613E4B02A0357B0006431B9 /* TipsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsPage.swift; sourceTree = "<group>"; };
+		B613E4B32A0357D5006431B9 /* LandingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		B613E4B52A0357FC006431B9 /* CategoryTipsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTipsPage.swift; sourceTree = "<group>"; };
 		B68DDFEC29F7B77D00960E06 /* MiniChallengeOyeah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallengeOyeah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68DDFEF29F7B77D00960E06 /* MiniChallengeOyeahApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallengeOyeahApp.swift; sourceTree = "<group>"; };
 		B68DDFF129F7B77D00960E06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,16 +48,12 @@
 		B6AE3EFC2A015F2B002A40BA /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		B6AE3EFF2A0164DF002A40BA /* NegativeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeCardView.swift; sourceTree = "<group>"; };
 		B6AE3F012A016C10002A40BA /* PositiveCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveCardView.swift; sourceTree = "<group>"; };
-
-		B6AF9AC62A021BC100930212 /* TipsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsPage.swift; sourceTree = "<group>"; };
-		B6AF9AC72A021BC100930212 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B6AF9ACE2A021D3C00930212 /* InstructionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionCardView.swift; sourceTree = "<group>"; };
 		B6AF9AD02A02247B00930212 /* NeutralCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeutralCardView.swift; sourceTree = "<group>"; };
 		B6AF9AD42A0230FE00930212 /* IndoTextClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = IndoTextClassifier.mlmodel; sourceTree = "<group>"; };
 		B6AF9AD72A02545900930212 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		B6AF9AD92A0257F000930212 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		B6AF9ADB2A025AAC00930212 /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +78,10 @@
 		B3DCF2762A034FB0005238C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B3E94CA62A00BE61007DD6DB /* LandingPage.swift */,
-				B74922C82A00C30E0056D6C5 /* TipsPage.swift */,
-				B74922CA2A00C3650056D6C5 /* CardView.swift */,
-				B3E94CA82A00CA8F007DD6DB /* CategoryTipsPage.swift */,
+				B613E4B52A0357FC006431B9 /* CategoryTipsPage.swift */,
+				B613E4B32A0357D5006431B9 /* LandingPage.swift */,
+				B613E4AF2A0357B0006431B9 /* CardView.swift */,
+				B613E4B02A0357B0006431B9 /* TipsPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,7 +183,6 @@
 			children = (
 				B3DCF2752A034FA2005238C5 /* Presenters */,
 				B6AF9AD62A02541D00930212 /* Font */,
-
 				B68DE02129F7C3FD00960E06 /* Colors */,
 			);
 			path = Themes;
@@ -205,8 +203,6 @@
 			path = Colors;
 			sourceTree = "<group>";
 		};
-
-
 		B68DE02629F7DA7C00960E06 /* SpeechToText */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,17 +253,6 @@
 				B6AF9AD02A02247B00930212 /* NeutralCardView.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		B6AF9AC52A021BC100930212 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B6AF9AC62A021BC100930212 /* TipsPage.swift */,
-				B6AF9AC72A021BC100930212 /* CardView.swift */,
-				B6AF9AC82A021BC100930212 /* LandingPage.swift */,
-				B6AF9AC92A021BC100930212 /* CategoryTipsPage.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		B6AF9AD62A02541D00930212 /* Font */ = {
@@ -350,13 +335,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B613E4B62A0357FC006431B9 /* CategoryTipsPage.swift in Sources */,
 				B6AF9AD52A0230FE00930212 /* IndoTextClassifier.mlmodel in Sources */,
 				B68DDFF229F7B77D00960E06 /* ContentView.swift in Sources */,
-				B6AF9ACC2A021BC100930212 /* LandingPage.swift in Sources */,
+				B6AF9ACC2A021BC100930212 /* (null) in Sources */,
 				B6AF9ACF2A021D3C00930212 /* InstructionCardView.swift in Sources */,
+				B613E4B12A0357B0006431B9 /* CardView.swift in Sources */,
 				B6AF9ADA2A0257F000930212 /* AppFonts.swift in Sources */,
-				B6AF9ACA2A021BC100930212 /* TipsPage.swift in Sources */,
-				B6AF9ACD2A021BC100930212 /* CategoryTipsPage.swift in Sources */,
+				B613E4B22A0357B0006431B9 /* TipsPage.swift in Sources */,
+				B613E4B42A0357D5006431B9 /* LandingPage.swift in Sources */,
+				B6AF9ACD2A021BC100930212 /* (null) in Sources */,
 				B6AE3F002A0164DF002A40BA /* NegativeCardView.swift in Sources */,
 				B6AE3EF929FFC5D6002A40BA /* Prompt.swift in Sources */,
 				B6AF9AD12A02247B00930212 /* NeutralCardView.swift in Sources */,
@@ -364,7 +352,6 @@
 				B6AE3EFD2A015F2B002A40BA /* AppColor.swift in Sources */,
 				B6AE3F022A016C10002A40BA /* PositiveCardView.swift in Sources */,
 				B68DDFF029F7B77D00960E06 /* MiniChallengeOyeahApp.swift in Sources */,
-				B6AF9ACB2A021BC100930212 /* CardView.swift in Sources */,
 				B68DE02529F7D6CF00960E06 /* SpeechRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
