@@ -11,7 +11,7 @@ struct NegativeCardView: View {
     var body: some View {
         ZStack {
             Capsule()
-                .fill(AppColor.orangeCapsuleColor)
+                .fill(AppColor.redNegativeCard)
                 .frame(width: 247, height: 105)
             HStack{
                 ZStack{
@@ -36,11 +36,13 @@ struct NegativeCardView: View {
                 Group{
                     Text("Hmm.. It’s sounds a little bit ")
                         .font(.custom(AppFonts.mediumFont, size: 12))
+                        .foregroundColor(.white)
                     + Text("NEGATIVE ")
                         .font(.custom(AppFonts.semiboldFont, size: 12))
-                        .foregroundColor(AppColor.blueCapsuleColor)
+                        .foregroundColor(.white)
                     + Text("Let’s try another approach ;)")
                         .font(.custom(AppFonts.mediumFont, size: 12))
+                        .foregroundColor(.white)
 //                        .font(.system(size: 11))
                     
                 }
