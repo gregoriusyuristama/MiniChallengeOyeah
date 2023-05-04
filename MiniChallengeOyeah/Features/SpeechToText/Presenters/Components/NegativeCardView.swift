@@ -24,7 +24,6 @@ struct NegativeCardView: View {
                                         , lineWidth: 4)
                         }
                         .padding(.leading, 40)
-//                        .padding(.top, 10)
                         
                     Image("RobotIcon")
                         .resizable()

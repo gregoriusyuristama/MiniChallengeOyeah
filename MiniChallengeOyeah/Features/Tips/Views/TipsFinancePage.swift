@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TipsPage: View {
+struct TipsFinancePage: View {
     private var tips: [String] = [
         "Knowing the financial situation of the family in advance by taking an approach in the form of exchanging information so that the goals and effectiveness of a communication process are achieved",
         
@@ -36,7 +36,7 @@ struct TipsPage: View {
 
                     
                 ForEach(tips, id:\.self) { info in
-                    CardView(info: info)
+                    CardFinanceView(info: info)
                         .padding(.bottom, 180)
 //                        .padding(.trailing, 27)
                 }
@@ -50,6 +50,6 @@ struct TipsPage: View {
 
 struct TipsPage_Previews: PreviewProvider {
     static var previews: some View {
-        TipsPage()
+        TipsFinancePage()
     }
 }

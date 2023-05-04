@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardView: View {
+struct CardFinanceView: View {
     var info: String
     @State private var offset = CGSize.zero
     var body: some View {
@@ -66,6 +66,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(info: "Knowing the financial situation of the family in advance by taking an approach in the form of exchanging information so that the goals and effectiveness of a communication process are achieved")
+        CardFinanceView(info: "Knowing the financial situation of the family in advance by taking an approach in the form of exchanging information so that the goals and effectiveness of a communication process are achieved")
     }
 }

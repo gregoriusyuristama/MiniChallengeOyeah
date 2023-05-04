@@ -27,7 +27,7 @@ struct CategoryTipsPage: View {
                                     .resizable()
                                     .frame(width: 300, height:100)
                                 
-                                NavigationLink(destination:TipsPage())
+                                NavigationLink(destination:TipsFinancePage())
                                 {
                                     Text("FINANCE")
                                         .font(Font.title.weight(.bold))

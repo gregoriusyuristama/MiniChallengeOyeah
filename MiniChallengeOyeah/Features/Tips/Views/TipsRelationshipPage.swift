@@ -36,7 +36,7 @@ struct TipsRelationshipPage: View {
 
                     
                 ForEach(tips, id:\.self) { info in
-                    CardView(info: info)
+                    CardFinanceView(info: info)
                         .padding(.bottom, 180)
                         .padding(.trailing, 27)
                 }
