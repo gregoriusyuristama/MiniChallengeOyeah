@@ -28,6 +28,15 @@ extension Prompt {
 }
 
 extension Prompt {
+    struct Tips {
+        
+        static let instruction = ["TAP TIPS ICON ON THE LEFT FOR SCANNING YOUR SENTENCE", "HI! IM ROBBY, I WILL BE YOUR FRIEND TODAY", "TAP MIC ICON ON THE RIGHT FOR SCANNING YOUR SENTENCE"]
+        private init() {}
+        
+    }
+}
+
+extension Prompt {
     struct Icon {
         static let startRecordIcon = "mic.fill"
         static let stopRecordIcon = "stop.fill"

@@ -85,6 +85,8 @@ struct CategoryTipsPage: View {
                 }
             }
             .ignoresSafeArea()
+        }
+
     }
 }
 
