@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B323C43E2A021013008B4C8D /* TextLP.swift in Sources */ = {isa = PBXBuildFile; fileRef = B323C43D2A021013008B4C8D /* TextLP.swift */; };
 		B3E94CA72A00BE61007DD6DB /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E94CA62A00BE61007DD6DB /* LandingPage.swift */; };
 		B3E94CA92A00CA8F007DD6DB /* CategoryTipsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E94CA82A00CA8F007DD6DB /* CategoryTipsPage.swift */; };
 		B68DDFF029F7B77D00960E06 /* MiniChallengeOyeahApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DDFEF29F7B77D00960E06 /* MiniChallengeOyeahApp.swift */; };
@@ -27,9 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B323C43D2A021013008B4C8D /* TextLP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLP.swift; sourceTree = "<group>"; };
-		B3E94CA62A00BE61007DD6DB /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LandingPage.swift; path = Presenters/Views/LandingPage.swift; sourceTree = SOURCE_ROOT; };
-		B3E94CA82A00CA8F007DD6DB /* CategoryTipsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryTipsPage.swift; path = Presenters/Views/CategoryTipsPage.swift; sourceTree = SOURCE_ROOT; };
+		B3E94CA62A00BE61007DD6DB /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LandingPage.swift; path = MiniChallengeOyeah/Core/Themes/Presenters/Views/LandingPage.swift; sourceTree = SOURCE_ROOT; };
+		B3E94CA82A00CA8F007DD6DB /* CategoryTipsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryTipsPage.swift; path = MiniChallengeOyeah/Core/Themes/Presenters/Views/CategoryTipsPage.swift; sourceTree = SOURCE_ROOT; };
 		B68DDFEC29F7B77D00960E06 /* MiniChallengeOyeah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallengeOyeah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68DDFEF29F7B77D00960E06 /* MiniChallengeOyeahApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallengeOyeahApp.swift; sourceTree = "<group>"; };
 		B68DDFF129F7B77D00960E06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,8 +41,8 @@
 		B6AE3EFF2A0164DF002A40BA /* NegativeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeCardView.swift; sourceTree = "<group>"; };
 		B6AE3F012A016C10002A40BA /* PositiveCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveCardView.swift; sourceTree = "<group>"; };
 		B6AF9ABD2A02141F00930212 /* IndoTextClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = IndoTextClassifier.mlmodel; sourceTree = "<group>"; };
-		B74922C82A00C30E0056D6C5 /* TipsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TipsPage.swift; path = Presenters/Views/TipsPage.swift; sourceTree = SOURCE_ROOT; };
-		B74922CA2A00C3650056D6C5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = Presenters/Views/CardView.swift; sourceTree = SOURCE_ROOT; };
+		B74922C82A00C30E0056D6C5 /* TipsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TipsPage.swift; path = MiniChallengeOyeah/Core/Themes/Presenters/Views/TipsPage.swift; sourceTree = SOURCE_ROOT; };
+		B74922CA2A00C3650056D6C5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = MiniChallengeOyeah/Core/Themes/Presenters/Views/CardView.swift; sourceTree = SOURCE_ROOT; };
 		B74922CC2A00C5600056D6C5 /* tipsbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipsbg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B3E94CA52A00BE4F007DD6DB /* Views */ = {
+		B3DCF2752A034FA2005238C5 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				B3DCF2762A034FB0005238C5 /* Views */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		B3DCF2762A034FB0005238C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				B3E94CA62A00BE61007DD6DB /* LandingPage.swift */,
@@ -164,7 +170,7 @@
 		B68DE01F29F7C38500960E06 /* Themes */ = {
 			isa = PBXGroup;
 			children = (
-				B68DE02229F7C40200960E06 /* Presenters */,
+				B3DCF2752A034FA2005238C5 /* Presenters */,
 				B68DE02129F7C3FD00960E06 /* Colors */,
 			);
 			path = Themes;
@@ -183,14 +189,6 @@
 				B6AE3EFC2A015F2B002A40BA /* AppColor.swift */,
 			);
 			path = Colors;
-			sourceTree = "<group>";
-		};
-		B68DE02229F7C40200960E06 /* Presenters */ = {
-			isa = PBXGroup;
-			children = (
-				B3E94CA52A00BE4F007DD6DB /* Views */,
-			);
-			path = Presenters;
 			sourceTree = "<group>";
 		};
 		B68DE02629F7DA7C00960E06 /* SpeechToText */ = {
