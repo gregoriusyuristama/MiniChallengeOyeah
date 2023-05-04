@@ -14,4 +14,13 @@ struct MiniChallengeOyeahApp: App {
             LandingPage()
         }
     }
+//    init() {
+//        for familyName in UIFont.familyNames{
+//            print(familyName)
+//
+//            for fontName in UIFont.fontNames(forFamilyName: familyName){
+//                print("-- \(fontName)")
+//            }
+//        }
+//    }
 }

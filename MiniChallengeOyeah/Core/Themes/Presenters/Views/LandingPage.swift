@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LandingPage: View {
     @State private var currentTextIndex = 1
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         NavigationView{
             GeometryReader { geo in
@@ -37,9 +38,8 @@ struct LandingPage: View {
                             .frame(width: 120, height: 105)
                             .offset(y: -200)
                             .offset(x:-11)
-                            
-                            NavigationLink(destination:ContentView())
-                            {
+          
+                            NavigationLink(destination: InputPage()){
                                 Circle()
                                     .fill(.clear)
                             }

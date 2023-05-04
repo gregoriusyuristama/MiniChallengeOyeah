@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CategoryTipsPage: View {
     var body: some View {
-      
             GeometryReader{ geo in
                 ZStack{
                     Image("CTP")
@@ -29,7 +28,7 @@ struct CategoryTipsPage: View {
                                     .resizable()
                                     .frame(width: 300, height:100)
                                 
-                                NavigationLink(destination:ContentView())
+                                NavigationLink(destination:TipsPage())
                                 {
                                     Text("FINANCE")
                                         .font(Font.title.weight(.bold))
@@ -50,7 +49,7 @@ struct CategoryTipsPage: View {
                                     .resizable()
                                     .frame(width: 300, height:100)
                                 
-                                NavigationLink(destination:ContentView())
+                                NavigationLink(destination:TipsPage())
                                 {
                                     Text("CAREER")
                                         .font(Font.title.weight(.bold))
@@ -71,7 +70,7 @@ struct CategoryTipsPage: View {
                                     .resizable()
                                     .frame(width: 300, height:100)
                                 
-                                NavigationLink(destination:ContentView())
+                                NavigationLink(destination:TipsPage())
                                 {
                                     Text("RELATIONSHIP")
                                         .font(Font.title.weight(.bold))
@@ -87,8 +86,9 @@ struct CategoryTipsPage: View {
             }
             .ignoresSafeArea()
         }
-    }
 
+    }
+}
 
 struct CategoryTipsPage_Previews: PreviewProvider {
     static var previews: some View {
