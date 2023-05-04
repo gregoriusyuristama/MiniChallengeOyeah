@@ -13,8 +13,7 @@ struct CategoryTipsPage: View {
                 ZStack{
                     Image("CTP")
                         .resizable()
-                        .frame(width:geo.size.width, height:geo.size.height)
-                        .scaledToFit()
+                        .scaledToFill()
                     
                     VStack{
                         ZStack{
@@ -49,7 +48,7 @@ struct CategoryTipsPage: View {
                                     .resizable()
                                     .frame(width: 300, height:100)
                                 
-                                NavigationLink(destination:TipsPage())
+                                NavigationLink(destination:TipsCareerPage())
                                 {
                                     Text("CAREER")
                                         .font(Font.title.weight(.bold))
@@ -70,7 +69,7 @@ struct CategoryTipsPage: View {
                                     .resizable()
                                     .frame(width: 300, height:100)
                                 
-                                NavigationLink(destination:TipsPage())
+                                NavigationLink(destination:TipsRelationshipPage())
                                 {
                                     Text("RELATIONSHIP")
                                         .font(Font.title.weight(.bold))
@@ -83,6 +82,7 @@ struct CategoryTipsPage: View {
                         
                     }
                 }
+                .frame(width:geo.size.width, height:geo.size.height)
             }
             .ignoresSafeArea()
         }
@@ -92,6 +92,9 @@ struct CategoryTipsPage: View {
 
 struct CategoryTipsPage_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryTipsPage()
+//        NavigationView{
+            CategoryTipsPage()
+            
+//        }
     }
 }

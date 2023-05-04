@@ -9,7 +9,8 @@ import SwiftUI
 
 struct LandingPage: View {
     @State private var currentTextIndex = 1
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State private var timer: Timer?
+    
     var body: some View {
         NavigationView{
             GeometryReader { geo in
@@ -24,9 +25,14 @@ struct LandingPage: View {
                             .frame(width: 250, height: 105)
                             .offset(y: -230)
                             .onAppear{
-                                Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { _ in
+                                timer = Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { _ in
                                     currentTextIndex = (currentTextIndex + 1) % Prompt.Tips.instruction.count
+                                    
                                 }
+                            }
+                            .onDisappear{
+                                timer?.invalidate()
+                                timer = nil
                             }
                         
                         HStack{
@@ -53,6 +59,7 @@ struct LandingPage: View {
             .ignoresSafeArea()
         }
     }
+    
 }
 
 struct LandingPage_Previews: PreviewProvider {

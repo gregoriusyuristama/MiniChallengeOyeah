@@ -11,6 +11,10 @@
 		B613E4B22A0357B0006431B9 /* TipsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613E4B02A0357B0006431B9 /* TipsPage.swift */; };
 		B613E4B42A0357D5006431B9 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613E4B32A0357D5006431B9 /* LandingPage.swift */; };
 		B613E4B62A0357FC006431B9 /* CategoryTipsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613E4B52A0357FC006431B9 /* CategoryTipsPage.swift */; };
+		B613E4B82A035D71006431B9 /* TipsCareerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613E4B72A035D71006431B9 /* TipsCareerPage.swift */; };
+		B613E4BA2A035DA1006431B9 /* CardCareerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613E4B92A035DA1006431B9 /* CardCareerView.swift */; };
+		B613E4BC2A035DB0006431B9 /* TipsRelationshipPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613E4BB2A035DB0006431B9 /* TipsRelationshipPage.swift */; };
+		B613E4BE2A035DC6006431B9 /* CardRelationshipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613E4BD2A035DC6006431B9 /* CardRelationshipView.swift */; };
 		B68DDFF029F7B77D00960E06 /* MiniChallengeOyeahApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DDFEF29F7B77D00960E06 /* MiniChallengeOyeahApp.swift */; };
 		B68DDFF229F7B77D00960E06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DDFF129F7B77D00960E06 /* ContentView.swift */; };
 		B68DDFF429F7B77E00960E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68DDFF329F7B77E00960E06 /* Assets.xcassets */; };
@@ -36,6 +40,10 @@
 		B613E4B02A0357B0006431B9 /* TipsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsPage.swift; sourceTree = "<group>"; };
 		B613E4B32A0357D5006431B9 /* LandingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		B613E4B52A0357FC006431B9 /* CategoryTipsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTipsPage.swift; sourceTree = "<group>"; };
+		B613E4B72A035D71006431B9 /* TipsCareerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsCareerPage.swift; sourceTree = "<group>"; };
+		B613E4B92A035DA1006431B9 /* CardCareerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCareerView.swift; sourceTree = "<group>"; };
+		B613E4BB2A035DB0006431B9 /* TipsRelationshipPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsRelationshipPage.swift; sourceTree = "<group>"; };
+		B613E4BD2A035DC6006431B9 /* CardRelationshipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRelationshipView.swift; sourceTree = "<group>"; };
 		B68DDFEC29F7B77D00960E06 /* MiniChallengeOyeah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallengeOyeah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68DDFEF29F7B77D00960E06 /* MiniChallengeOyeahApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallengeOyeahApp.swift; sourceTree = "<group>"; };
 		B68DDFF129F7B77D00960E06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +90,10 @@
 				B613E4B32A0357D5006431B9 /* LandingPage.swift */,
 				B613E4AF2A0357B0006431B9 /* CardView.swift */,
 				B613E4B02A0357B0006431B9 /* TipsPage.swift */,
+				B613E4B72A035D71006431B9 /* TipsCareerPage.swift */,
+				B613E4B92A035DA1006431B9 /* CardCareerView.swift */,
+				B613E4BB2A035DB0006431B9 /* TipsRelationshipPage.swift */,
+				B613E4BD2A035DC6006431B9 /* CardRelationshipView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -341,7 +353,9 @@
 				B6AF9ACC2A021BC100930212 /* (null) in Sources */,
 				B6AF9ACF2A021D3C00930212 /* InstructionCardView.swift in Sources */,
 				B613E4B12A0357B0006431B9 /* CardView.swift in Sources */,
+				B613E4BA2A035DA1006431B9 /* CardCareerView.swift in Sources */,
 				B6AF9ADA2A0257F000930212 /* AppFonts.swift in Sources */,
+				B613E4BC2A035DB0006431B9 /* TipsRelationshipPage.swift in Sources */,
 				B613E4B22A0357B0006431B9 /* TipsPage.swift in Sources */,
 				B613E4B42A0357D5006431B9 /* LandingPage.swift in Sources */,
 				B6AF9ACD2A021BC100930212 /* (null) in Sources */,
@@ -349,7 +363,9 @@
 				B6AE3EF929FFC5D6002A40BA /* Prompt.swift in Sources */,
 				B6AF9AD12A02247B00930212 /* NeutralCardView.swift in Sources */,
 				B68DE02829F7DABD00960E06 /* InputPage.swift in Sources */,
+				B613E4B82A035D71006431B9 /* TipsCareerPage.swift in Sources */,
 				B6AE3EFD2A015F2B002A40BA /* AppColor.swift in Sources */,
+				B613E4BE2A035DC6006431B9 /* CardRelationshipView.swift in Sources */,
 				B6AE3F022A016C10002A40BA /* PositiveCardView.swift in Sources */,
 				B68DDFF029F7B77D00960E06 /* MiniChallengeOyeahApp.swift in Sources */,
 				B68DE02529F7D6CF00960E06 /* SpeechRecognizer.swift in Sources */,

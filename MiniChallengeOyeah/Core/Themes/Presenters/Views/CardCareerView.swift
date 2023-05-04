@@ -1,13 +1,12 @@
 //
-//  CardView.swift
+//  CardCareerView.swift
 //  MiniChallengeOyeah
 //
-//  Created by Brandon Nicolas Marlim on 02/05/23.
+//  Created by Brandon Nicolas Marlim on 03/05/23.
 //
-
 import SwiftUI
 
-struct CardView: View {
+struct CardCareerView: View {
     var info: String
     @State private var offset = CGSize.zero
     var body: some View {
@@ -31,7 +30,7 @@ struct CardView: View {
                     }
                 }
             }
-//            .ignoresSafeArea()
+            .ignoresSafeArea()
         
         .offset(x: offset.width, y: offset.height * 0.4)
         .rotationEffect(.degrees(Double(offset.width / 40)))
@@ -64,8 +63,8 @@ struct CardView: View {
 
 
 
-struct CardView_Previews: PreviewProvider {
+struct CardCareerView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(info: "Knowing the financial situation of the family in advance by taking an approach in the form of exchanging information so that the goals and effectiveness of a communication process are achieved")
+        CardCareerView(info: "It is a good idea to discuss your future and what you want to achieve in life with your parents because they have likely encountered similar challenges that you're facing or the one that you are going to face")
     }
 }

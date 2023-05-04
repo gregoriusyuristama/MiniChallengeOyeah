@@ -1,13 +1,13 @@
 //
-//  CardView.swift
+//  CardRelationshipPage.swift
 //  MiniChallengeOyeah
 //
-//  Created by Brandon Nicolas Marlim on 02/05/23.
+//  Created by Brandon Nicolas Marlim on 03/05/23.
 //
 
 import SwiftUI
 
-struct CardView: View {
+struct CardRelationshipView: View {
     var info: String
     @State private var offset = CGSize.zero
     var body: some View {
@@ -31,7 +31,7 @@ struct CardView: View {
                     }
                 }
             }
-//            .ignoresSafeArea()
+            .ignoresSafeArea()
         
         .offset(x: offset.width, y: offset.height * 0.4)
         .rotationEffect(.degrees(Double(offset.width / 40)))
@@ -64,8 +64,9 @@ struct CardView: View {
 
 
 
-struct CardView_Previews: PreviewProvider {
+struct CardRelationshipView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(info: "Knowing the financial situation of the family in advance by taking an approach in the form of exchanging information so that the goals and effectiveness of a communication process are achieved")
+        CardRelationshipView(info: "Use an assertive I statement to tell your family members how they affect you because sometimes they may not realize it")
     }
 }
+
