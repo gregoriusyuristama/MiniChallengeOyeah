@@ -22,8 +22,9 @@ struct CardFinanceView: View {
                 HStack{
                     VStack{
                         Text(info)
+                            .padding(.horizontal, 20)
                             .frame(width: 300, height: 520)
-                            .font(.title)
+                            .font(.custom(AppFonts.mediumFont, size: 24))
                             .foregroundColor(.white)
                             .bold()
                             .padding()

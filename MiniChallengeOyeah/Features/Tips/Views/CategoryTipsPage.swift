@@ -20,7 +20,7 @@ struct CategoryTipsPage: View {
                             Rectangle()
                                 .frame(width: 500, height: 30)
                                 .padding(.trailing, -100)
-                                .foregroundColor(Color(red: 1.002, green: 0.788, blue: 0.002))
+                                .foregroundColor(AppColor.yelowLineColor)
                             
                             ZStack {
                                 Image("BB")
@@ -29,7 +29,7 @@ struct CategoryTipsPage: View {
                                 
                                 NavigationLink(destination:TipsFinancePage())
                                 {
-                                    Text("FINANCE")
+                                    Text(Prompt.Tips.financeTitle)
                                         .font(Font.title.weight(.bold))
                                         .frame(maxWidth: .infinity, maxHeight:100)
                                         .foregroundColor(Color.white)
@@ -41,7 +41,7 @@ struct CategoryTipsPage: View {
                             Rectangle()
                                 .frame(width: 500, height: 30)
                                 .padding(.trailing, -100)
-                                .foregroundColor(Color(red: 1.002, green: 0.788, blue: 0.002))
+                                .foregroundColor(AppColor.yelowLineColor)
                             
                             ZStack {
                                 Image("BB")
@@ -50,7 +50,7 @@ struct CategoryTipsPage: View {
                                 
                                 NavigationLink(destination:TipsCareerPage())
                                 {
-                                    Text("CAREER")
+                                    Text(Prompt.Tips.careerTitle)
                                         .font(Font.title.weight(.bold))
                                         .frame(maxWidth: .infinity, maxHeight:100)
                                         .foregroundColor(Color.white)
@@ -62,7 +62,7 @@ struct CategoryTipsPage: View {
                             Rectangle()
                                 .frame(width: 500, height: 30)
                                 .padding(.trailing, -100)
-                                .foregroundColor(Color(red: 1.002, green: 0.788, blue: 0.002))
+                                .foregroundColor(AppColor.yelowLineColor)
                             
                             ZStack {
                                 Image("BB")
@@ -71,7 +71,7 @@ struct CategoryTipsPage: View {
                                 
                                 NavigationLink(destination:TipsRelationshipPage())
                                 {
-                                    Text("RELATIONSHIP")
+                                    Text(Prompt.Tips.relationshipTitle)
                                         .font(Font.title.weight(.bold))
                                         .frame(maxWidth: .infinity, maxHeight:100)
                                         .foregroundColor(Color.white)

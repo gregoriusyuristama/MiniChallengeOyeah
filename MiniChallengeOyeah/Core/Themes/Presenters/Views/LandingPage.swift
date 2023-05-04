@@ -24,7 +24,7 @@ struct LandingPage: View {
                         Text(Prompt.Tips.instruction[currentTextIndex])
                             .frame(width: 250, height: 105)
                             .offset(y: -230)
-                            .font(.custom(AppFonts.mediumFont, size: 22))
+                            .font(.custom(AppFonts.mediumFont, size: 18))
                             .multilineTextAlignment(.center)
                             .onAppear{
                                 timer = Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { _ in

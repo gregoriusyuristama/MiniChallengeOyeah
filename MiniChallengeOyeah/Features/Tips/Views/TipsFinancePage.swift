@@ -26,13 +26,16 @@ struct TipsFinancePage: View {
                     .resizable()
                     .scaledToFit()
                 
-                (Text("Swipe to see more ")
-                                .foregroundColor(.black)
-                                + Text("tips")
-                                    .bold()
-                                    .foregroundColor(.orange))
-                                .offset(y: 200)
-                                .offset(x: 65)
+                Group{
+                    Text("Swipe to see more ")
+                        .foregroundColor(.black)
+                    + Text("tips")
+                        .bold()
+                        .foregroundColor(.orange)
+                }
+                
+                .offset(y: 200)
+                .offset(x: 65)
 
                     
                 ForEach(tips, id:\.self) { info in
