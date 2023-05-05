@@ -19,11 +19,13 @@ struct TipsFinancePage: View {
                     .scaledToFit()
                 
                 Group{
-                    Text("Swipe to see more ")
+                    (Text("SWIPE TO SEE MORE ")
                         .foregroundColor(.black)
-                    + Text("tips")
+                        .font(.custom(AppFonts.mediumFont, size: 12))
+                     + Text("TIPS")
                         .bold()
-                        .foregroundColor(.orange)
+                        .font(.custom(AppFonts.mediumFont, size: 12))
+                        .foregroundColor(.orange))
                 }
                 
                 .offset(y: 200)

@@ -25,12 +25,15 @@ struct LandingPage: View {
                             if currentTextIndex == 0 {
                                 Group{
                                     Text(Prompt.Tips.instruction[currentTextIndex][0])
+                                        .foregroundColor(Color.black)
                                     + Text(Prompt.Tips.instruction[currentTextIndex][1])
                                         .foregroundColor(AppColor.orangeInstructionText)
                                     + Text(Prompt.Tips.instruction[currentTextIndex][2])
+                                        .foregroundColor(Color.black)
                                     + Text(Prompt.Tips.instruction[currentTextIndex][3])
                                         .foregroundColor(AppColor.orangeInstructionText)
                                     + Text(Prompt.Tips.instruction[currentTextIndex][4])
+                                        .foregroundColor(Color.black)
                                 }
                                 .frame(width: 250, height: 105)
                                 .offset(y: -230)
@@ -44,16 +47,20 @@ struct LandingPage: View {
                                 .frame(width: 250, height: 105)
                                 .offset(y: -230)
                                 .font(.custom(AppFonts.mediumFont, size: 18))
+                                .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)
                                 
                             } else {
                                 Group{
                                     Text(Prompt.Tips.instruction[currentTextIndex][0])
+                                        .foregroundColor(Color.black)
                                     + Text(Prompt.Tips.instruction[currentTextIndex][1]).foregroundColor(AppColor.blueInstructionText)
                                     + Text(Prompt.Tips.instruction[currentTextIndex][2])
+                                        .foregroundColor(Color.black)
                                     + Text(Prompt.Tips.instruction[currentTextIndex][3])
                                         .foregroundColor(AppColor.blueInstructionText)
                                     + Text(Prompt.Tips.instruction[currentTextIndex][4])
+                                        .foregroundColor(Color.black)
                                 }
                                 .frame(width: 250, height: 105)
                                 .offset(y: -230)
