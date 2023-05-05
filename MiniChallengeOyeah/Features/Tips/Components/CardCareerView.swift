@@ -7,6 +7,7 @@
 import SwiftUI
 
 struct CardCareerView: View {
+    @State private var cardOpacity = 1.0
     var info: String
     @State private var offset = CGSize.zero
     var body: some View {
@@ -30,7 +31,7 @@ struct CardCareerView: View {
                     }
                 }
             }
-            .ignoresSafeArea()
+//            .ignoresSafeArea()
         
         .offset(x: offset.width, y: offset.height * 0.4)
         .rotationEffect(.degrees(Double(offset.width / 40)))
@@ -45,6 +46,7 @@ struct CardCareerView: View {
                     }
                 }
         )
+        .opacity(0)
     }
     
     func swipeCard(width: CGFloat){
@@ -52,9 +54,11 @@ struct CardCareerView: View {
         case -500...(-150):
             print("\(info) removed")
             offset = CGSize(width: -500, height: 0)
+            cardOpacity = 0
         case 150...500:
             print("\(info) added")
             offset = CGSize(width: 500, height: 0)
+            cardOpacity = 0
         default:
             offset = .zero
         }

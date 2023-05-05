@@ -8,32 +8,46 @@
 import SwiftUI
 
 struct TipsCareerPage: View {
-    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State private var isButtonTapped = false
     
     var body: some View {
-        VStack{
+        GeometryReader{ geo in
             ZStack{
                 Image("tipsbg")
                     .resizable()
                     .scaledToFit()
                 
-                (Text("Swipe to see more ")
-                                .foregroundColor(.black)
-                                + Text("tips")
-                                    .bold()
-                                    .foregroundColor(.orange))
-                                .offset(y: 200)
-                                .offset(x: 65)
+                Group{
+                    (Text("Swipe to see more ")
+                        .foregroundColor(.black)
+                     + Text("tips")
+                        .bold()
+                        .foregroundColor(.orange))
+                }
+                .offset(y: 200)
+                .offset(x: 65)
 
                     
                 ForEach(TipsCareer.tips, id:\.self) { info in
                     CardFinanceView(info: info)
                         .padding(.bottom, 180)
-                        .padding(.trailing, 27)
                 }
             }
-            .ignoresSafeArea()
+            .frame(width: geo.size.width, height: geo.size.height)
         }
+        .ignoresSafeArea()
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading:
+            Button{
+            self.presentationMode.wrappedValue.dismiss()
+        }label:{
+            Image(systemName: "arrowshape.backward.fill")
+                .foregroundColor(AppColor.orangeHomeIconColor)
+        })
+    }
+    func doToggleShowCard(){
+        isButtonTapped.toggle()
     }
 }
     
