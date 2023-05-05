@@ -103,9 +103,8 @@ struct CategoryTipsPage: View {
 
 struct CategoryTipsPage_Previews: PreviewProvider {
     static var previews: some View {
-//        NavigationView{
+        NavigationView{
             CategoryTipsPage()
-            
-//        }
+        }
     }
 }
