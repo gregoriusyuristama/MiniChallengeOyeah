@@ -21,34 +21,51 @@ struct InputPage: View {
     
     let textMlModel = try? IndoTextClassifier.init(configuration: MLModelConfiguration())
     var body: some View {
-        GeometryReader{ geo in
             ZStack{
                 Image("inputPageBackground")
                     .resizable()
-                    .scaledToFit()
-                    .frame(width: geo.size.width, height: geo.size.height)
-                    .opacity(0.2)
+                    .scaledToFill()
+//                    .frame(width: geo.size.width, height: geo.size.height)
                     .gesture(
                         TapGesture()
                             .onEnded { UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil) }
                     )
                 VStack(spacing: 20){
-                    TextEditor(text: $textFieldText)
-                        .disabled(isRecording)
-                        .scrollContentBackground(.hidden)
-                        .padding(.all, 30)
-                        .background(.white)
-                        .foregroundColor(.black)
-                        .frame(width: 300, height: 500)
-                        .cornerRadius(50)
-                        .shadow(radius: 10, x: 10, y:5)
-                        .onChange(of: speechRecognizer.transcript){ newValue in
-                            textFieldText = newValue
+                    ZStack{
+                        
+                        TextEditor(text: $textFieldText)
+                            .disabled(isRecording)
+                            .scrollContentBackground(.hidden)
+                            .padding(.all, 30)
+                            .background(.white)
+                            .foregroundColor(.black)
+                            .frame(width: 300, height: 500)
+                            .cornerRadius(50)
+                            .shadow(radius: 10, x: 10, y:5)
+                            .font(.custom(AppFonts.mediumFont, size: 17))
+                            .onChange(of: speechRecognizer.transcript){ newValue in
+                                textFieldText = newValue
+                            }
+                            .overlay(RoundedRectangle(cornerRadius: 50)
+                                .stroke(AppColor.blueGradient
+                                        , lineWidth: 5))
+                            .padding(.top, 160)
+                        
+                        if textFieldText == ""{
+                            VStack{
+                                HStack{
+                                    Text(Prompt.InputPage.inputPageInstruction)
+                                        .foregroundColor(Color.gray)
+                                        .font(.custom(AppFonts.mediumFont, size: 17))
+                                    Spacer()
+                                    
+                                }
+                                Spacer()
+                            }
+                            .frame(width: 225, height: 265)
                         }
-                        .overlay(RoundedRectangle(cornerRadius: 50)
-                            .stroke(AppColor.blueGradient
-                                    , lineWidth: 5))
-                        .padding(.top, 160)
+                    }
+                    
                     Button{
                         isRecording.toggle()
                         if isRecording {
@@ -112,7 +129,6 @@ struct InputPage: View {
                 InstructionCardView()
                         .offset(y: -300)
                         .opacity(isButtonTapped ? 0 : 1)
-            }
         }
         .ignoresSafeArea()
         .navigationBarBackButtonHidden(true)
