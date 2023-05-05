@@ -54,3 +54,10 @@ extension Prompt{
         private init () {}
     }
 }
+
+extension Prompt{
+    struct InputPage{
+        static let inputPageInstruction = "Type Here..."
+        private init () {}
+    }
+}

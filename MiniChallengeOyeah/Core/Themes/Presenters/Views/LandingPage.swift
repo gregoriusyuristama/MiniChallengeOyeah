@@ -25,6 +25,7 @@ struct LandingPage: View {
                             .frame(width: 250, height: 105)
                             .offset(y: -230)
                             .font(.custom(AppFonts.mediumFont, size: 18))
+                            .foregroundColor(.black)
                             .multilineTextAlignment(.center)
                             .onAppear{
                                 timer = Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { _ in
