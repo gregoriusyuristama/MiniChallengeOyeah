@@ -30,7 +30,9 @@ extension Prompt {
 extension Prompt {
     struct Tips {
         
-        static let instruction = ["TAP TIPS ICON ON THE LEFT FOR SCANNING YOUR SENTENCE", "HI! IM SAFYA, I WILL BE YOUR FRIEND TODAY", "TAP MIC ICON ON THE RIGHT FOR SCANNING YOUR SENTENCE"]
+        static let instruction = [["TAP ","TIPS ICON"," ON THE ","LEFT"," FOR SCANNING YOUR SENTENCE"],
+                                  ["HI! IM SAFYA, I WILL BE YOUR FRIEND TODAY"],
+                                  ["TAP ", "MIC ICON", " ON THE ","RIGHT"," FOR SCANNING YOUR SENTENCE"]]
         static let financeTitle = "FINANCE"
         static let careerTitle = "CAREER"
         static let relationshipTitle = "RELATIONSHIP"
