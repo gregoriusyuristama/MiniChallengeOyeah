@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CategoryTipsPage: View {
+    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var body: some View {
             GeometryReader{ geo in
                 ZStack{
@@ -85,6 +88,14 @@ struct CategoryTipsPage: View {
                 .frame(width:geo.size.width, height:geo.size.height)
             }
             .ignoresSafeArea()
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading:
+                Button{
+                self.presentationMode.wrappedValue.dismiss()
+            }label:{
+                Image(systemName: "house.fill")
+                    .foregroundColor(AppColor.orangeHomeIconColor)
+            })
         }
 
     }
@@ -92,9 +103,8 @@ struct CategoryTipsPage: View {
 
 struct CategoryTipsPage_Previews: PreviewProvider {
     static var previews: some View {
-//        NavigationView{
+        NavigationView{
             CategoryTipsPage()
-            
-//        }
+        }
     }
 }

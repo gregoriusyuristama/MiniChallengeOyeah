@@ -21,21 +21,58 @@ struct LandingPage: View {
                         .scaledToFit()
                     
                     VStack {
-                        Text(Prompt.Tips.instruction[currentTextIndex])
-                            .frame(width: 250, height: 105)
-                            .offset(y: -230)
-                            .font(.custom(AppFonts.mediumFont, size: 18))
-                            .foregroundColor(.black)
-                            .multilineTextAlignment(.center)
-                            .onAppear{
-                                timer = Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { _ in
-                                    currentTextIndex = (currentTextIndex + 1) % Prompt.Tips.instruction.count
+                        Group{
+                            if currentTextIndex == 0 {
+                                Group{
+                                    Text(Prompt.Tips.instruction[currentTextIndex][0])
+                                    + Text(Prompt.Tips.instruction[currentTextIndex][1])
+                                        .foregroundColor(AppColor.orangeInstructionText)
+                                    + Text(Prompt.Tips.instruction[currentTextIndex][2])
+                                    + Text(Prompt.Tips.instruction[currentTextIndex][3])
+                                        .foregroundColor(AppColor.orangeInstructionText)
+                                    + Text(Prompt.Tips.instruction[currentTextIndex][4])
                                 }
+                                .frame(width: 250, height: 105)
+                                .offset(y: -230)
+                                .font(.custom(AppFonts.mediumFont, size: 18))
+                                .multilineTextAlignment(.center)
                             }
-                            .onDisappear{
-                                timer?.invalidate()
-                                timer = nil
+                            else if currentTextIndex == 1 {
+                                Text(
+                                    Prompt.Tips.instruction[currentTextIndex][0]
+                                )
+                                .frame(width: 250, height: 105)
+                                .offset(y: -230)
+                                .font(.custom(AppFonts.mediumFont, size: 18))
+                                .multilineTextAlignment(.center)
+                                
+                            } else {
+                                Group{
+                                    Text(Prompt.Tips.instruction[currentTextIndex][0])
+                                    + Text(Prompt.Tips.instruction[currentTextIndex][1]).foregroundColor(AppColor.blueInstructionText)
+                                    + Text(Prompt.Tips.instruction[currentTextIndex][2])
+                                    + Text(Prompt.Tips.instruction[currentTextIndex][3])
+                                        .foregroundColor(AppColor.blueInstructionText)
+                                    + Text(Prompt.Tips.instruction[currentTextIndex][4])
+                                }
+                                .frame(width: 250, height: 105)
+                                .offset(y: -230)
+                                .font(.custom(AppFonts.mediumFont, size: 18))
+                                .multilineTextAlignment(.center)
                             }
+                            
+                        }
+                        .onAppear{
+                            timer = Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { _ in
+                                currentTextIndex = (currentTextIndex + 1) % Prompt.Tips.instruction.count
+                            }
+                        }
+                        .onDisappear{
+                            timer?.invalidate()
+                            timer = nil
+                        }
+                        
+                            
                         
                         HStack{
                             NavigationLink(destination:CategoryTipsPage())
