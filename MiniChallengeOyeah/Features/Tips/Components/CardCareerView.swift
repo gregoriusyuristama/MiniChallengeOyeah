@@ -23,7 +23,8 @@ struct CardCareerView: View {
                     VStack{
                         Text(info)
                             .frame(width: 300, height: 520)
-                            .font(.title)
+//                            .font(.title)
+                            .font(.custom(AppFonts.mediumFont, size: 24))
                             .foregroundColor(.white)
                             .bold()
                             .padding()
@@ -46,7 +47,7 @@ struct CardCareerView: View {
                     }
                 }
         )
-        .opacity(0)
+//        .opacity(0)
     }
     
     func swipeCard(width: CGFloat){

@@ -100,6 +100,7 @@
 		B613E4BF2A03649E006431B9 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				B68DE02A29F7E04A00960E06 /* ViewModel */,
 				B613E4C12A036578006431B9 /* Components */,
 				B613E4C02A03656B006431B9 /* Views */,
 			);
@@ -249,7 +250,6 @@
 			isa = PBXGroup;
 			children = (
 				B68DE02B29F7E05A00960E06 /* Presenters */,
-				B68DE02A29F7E04A00960E06 /* ViewModel */,
 				B68DE02929F7E04600960E06 /* Models */,
 			);
 			path = SpeechToText;
