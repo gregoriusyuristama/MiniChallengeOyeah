@@ -47,7 +47,7 @@
 		B613E4B92A035DA1006431B9 /* CardCareerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCareerView.swift; sourceTree = "<group>"; };
 		B613E4BB2A035DB0006431B9 /* TipsRelationshipPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsRelationshipPage.swift; sourceTree = "<group>"; };
 		B613E4BD2A035DC6006431B9 /* CardRelationshipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRelationshipView.swift; sourceTree = "<group>"; };
-		B68DDFEC29F7B77D00960E06 /* MiniChallengeOyeah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallengeOyeah.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B68DDFEC29F7B77D00960E06 /* SAFYA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAFYA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68DDFEF29F7B77D00960E06 /* MiniChallengeOyeahApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallengeOyeahApp.swift; sourceTree = "<group>"; };
 		B68DDFF129F7B77D00960E06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B68DDFF329F7B77E00960E06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 		B68DDFED29F7B77D00960E06 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B68DDFEC29F7B77D00960E06 /* MiniChallengeOyeah.app */,
+				B68DDFEC29F7B77D00960E06 /* SAFYA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -311,9 +311,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B68DDFEB29F7B77D00960E06 /* MiniChallengeOyeah */ = {
+		B68DDFEB29F7B77D00960E06 /* SAFYA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B68DDFFA29F7B77E00960E06 /* Build configuration list for PBXNativeTarget "MiniChallengeOyeah" */;
+			buildConfigurationList = B68DDFFA29F7B77E00960E06 /* Build configuration list for PBXNativeTarget "SAFYA" */;
 			buildPhases = (
 				B68DDFE829F7B77D00960E06 /* Sources */,
 				B68DDFE929F7B77D00960E06 /* Frameworks */,
@@ -323,9 +323,9 @@
 			);
 			dependencies = (
 			);
-			name = MiniChallengeOyeah;
+			name = SAFYA;
 			productName = MiniChallengeOyeah;
-			productReference = B68DDFEC29F7B77D00960E06 /* MiniChallengeOyeah.app */;
+			productReference = B68DDFEC29F7B77D00960E06 /* SAFYA.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -343,7 +343,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B68DDFE729F7B77D00960E06 /* Build configuration list for PBXProject "MiniChallengeOyeah" */;
+			buildConfigurationList = B68DDFE729F7B77D00960E06 /* Build configuration list for PBXProject "SAFYA" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -356,7 +356,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B68DDFEB29F7B77D00960E06 /* MiniChallengeOyeah */,
+				B68DDFEB29F7B77D00960E06 /* SAFYA */,
 			);
 		};
 /* End PBXProject section */
@@ -602,7 +602,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B68DDFE729F7B77D00960E06 /* Build configuration list for PBXProject "MiniChallengeOyeah" */ = {
+		B68DDFE729F7B77D00960E06 /* Build configuration list for PBXProject "SAFYA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B68DDFF829F7B77E00960E06 /* Debug */,
@@ -611,7 +611,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B68DDFFA29F7B77E00960E06 /* Build configuration list for PBXNativeTarget "MiniChallengeOyeah" */ = {
+		B68DDFFA29F7B77E00960E06 /* Build configuration list for PBXNativeTarget "SAFYA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B68DDFFB29F7B77E00960E06 /* Debug */,
