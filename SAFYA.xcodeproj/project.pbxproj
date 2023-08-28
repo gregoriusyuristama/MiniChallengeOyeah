@@ -532,11 +532,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MiniChallengeOyeah/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SAFYA/Preview Content\"";
 				DEVELOPMENT_TEAM = U43A7X58YW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MiniChallengeOyeah/Info.plist;
+				INFOPLIST_FILE = SAFYA/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SAFYA;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "In order to use Speech to text we need your permission to access microphone";
@@ -569,11 +569,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MiniChallengeOyeah/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SAFYA/Preview Content\"";
 				DEVELOPMENT_TEAM = U43A7X58YW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MiniChallengeOyeah/Info.plist;
+				INFOPLIST_FILE = SAFYA/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SAFYA;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "In order to use Speech to text we need your permission to access microphone";
