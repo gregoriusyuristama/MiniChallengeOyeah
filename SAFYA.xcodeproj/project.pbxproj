@@ -131,7 +131,7 @@
 		B68DDFE329F7B77D00960E06 = {
 			isa = PBXGroup;
 			children = (
-				B68DDFEE29F7B77D00960E06 /* MiniChallengeOyeah */,
+				B68DDFEE29F7B77D00960E06 /* SAFYA */,
 				B68DDFED29F7B77D00960E06 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -144,7 +144,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B68DDFEE29F7B77D00960E06 /* MiniChallengeOyeah */ = {
+		B68DDFEE29F7B77D00960E06 /* SAFYA */ = {
 			isa = PBXGroup;
 			children = (
 				B68DE02329F7D63C00960E06 /* Info.plist */,
@@ -154,7 +154,7 @@
 				B68DDFF129F7B77D00960E06 /* ContentView.swift */,
 				B68DDFF529F7B77E00960E06 /* Preview Content */,
 			);
-			path = MiniChallengeOyeah;
+			path = SAFYA;
 			sourceTree = "<group>";
 		};
 		B68DDFF529F7B77E00960E06 /* Preview Content */ = {
